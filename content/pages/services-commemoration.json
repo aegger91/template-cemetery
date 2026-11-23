@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "services/commemoration",
+  "title": {
+    "en": "Commemoration notes",
+    "ru": "Записки об упокоении",
+    "el": "Ονόματα για μνημόνευση"
+  },
+  "description": {
+    "en": "Send the names of the departed to be commemorated, with an offering and an optional candle or lampada.",
+    "ru": "Подайте имена усопших для поминовения, с пожертвованием и, по желанию, свечой или лампадой.",
+    "el": "Στείλτε τα ονόματα των κεκοιμημένων για μνημόνευση, με προσφορά και, αν θέλετε, κερί ή καντήλι."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "Send the names of the departed to be commemorated at the chapel.",
+        "ru": "Отправьте имена усопших для поминовения в часовне.",
+        "el": "Στείλτε τα ονόματα των κεκοιμημένων για μνημόνευση στο παρεκκλήσι."
+      }
+    },
+    {
+      "type": "commemorationForm",
+      "enabled": true,
+      "id": "note",
+      "suggestedAmounts": [
+        5,
+        10,
+        25
+      ],
+      "candlePrice": 3,
+      "lampadaPrice": 15
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "find-a-grave/record",
+  "title": { "en": "Grave record", "ru": "Запись о погребении", "el": "Εγγραφή ταφής" },
+  "description": {
+    "en": "Burial record with dates, location and a map of the section.",
+    "ru": "Запись о погребении с датами, местом и схемой участка.",
+    "el": "Εγγραφή ταφής με ημερομηνίες, θέση και χάρτη του τομέα."
+  },
+  "sections": [
+    { "type": "graveRecord", "enabled": true }
+  ]
+}

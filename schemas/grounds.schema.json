@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectorthodox.example/schemas/grounds.schema.json",
+  "title": "Cemetery grounds and sections",
+  "description": "A simple site plan in map units. Each section is a rectangle split into rows (top to bottom) and plots (left to right). Grave records point to section, row and plot.",
+  "type": "object",
+  "required": ["width", "height", "sections"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "width": { "type": "number" },
+    "height": { "type": "number" },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "x", "y", "w", "h", "rows", "plotsPerRow"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "$ref": "common.schema.json#/$defs/localized" },
+          "description": { "$ref": "common.schema.json#/$defs/localized" },
+          "x": { "type": "number" }, "y": { "type": "number" }, "w": { "type": "number" }, "h": { "type": "number" },
+          "rows": { "type": "integer", "minimum": 1 },
+          "plotsPerRow": { "type": "integer", "minimum": 1 },
+          "availablePlots": { "type": "integer", "minimum": 0, "description": "Plots the office can still offer in this section." }
+        },
+        "additionalProperties": false
+      }
+    },
+    "landmarks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "x", "y", "w", "h", "label"],
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "enum": ["chapel", "gate", "building", "parking", "water"] },
+          "x": { "type": "number" }, "y": { "type": "number" }, "w": { "type": "number" }, "h": { "type": "number" },
+          "label": { "$ref": "common.schema.json#/$defs/localized" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "../schemas/sources.schema.json",
+  "images": [
+    {
+      "id": "belozersk-chapel-field",
+      "file": "/images/pd/belozersk-chapel-field.webp",
+      "title": "Chapel on the site where the city of Belozersk was founded in ancient times (near the village of Krokhino)",
+      "author": "Sergei Mikhailovich Prokudin-Gorskii (1863 to 1944)",
+      "date": "1909",
+      "license": "Public domain (PD-old: author died more than 70 years ago)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gorskii_04420u.jpg",
+      "changes": "Edges trimmed, resized and converted to WebP."
+    },
+    {
+      "id": "village-churchyard-winter",
+      "file": "/images/pd/village-churchyard-winter.webp",
+      "title": "Pogost (Cimetière du village), postcard",
+      "author": "Sergei Mikhailovich Prokudin-Gorskii (1863 to 1944)",
+      "date": "1905",
+      "license": "Public domain (PD-old: author died more than 70 years ago)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pogost%CA%BA_%3D_Cimeti%C3%A8re_du_village_-_-_D%27apr%C3%A8s_nature_S._M._Prokoudine-Gorsky,_St._P%C3%A8tersbourg._LCCN2012649137.jpg",
+      "changes": "Cropped to the photograph (postcard border and handwriting removed), resized and converted to WebP."
+    },
+    {
+      "id": "pereslavl-chapel",
+      "file": "/images/pd/pereslavl-chapel.webp",
+      "title": "Chapel three versts from the Feodor Stratilat Monastery, Pereslavl-Zalesskii",
+      "author": "Sergei Mikhailovich Prokudin-Gorskii (1863 to 1944)",
+      "date": "1911",
+      "license": "Public domain (PD-old: author died more than 70 years ago)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gorskii_21397u.jpg",
+      "changes": "Edges trimmed, resized and converted to WebP."
+    },
+    {
+      "id": "feodor-stratilat-chapel",
+      "file": "/images/pd/feodor-stratilat-chapel.webp",
+      "title": "Chapel of Feodor Stratilat",
+      "author": "Sergei Mikhailovich Prokudin-Gorskii (1863 to 1944)",
+      "date": "1911",
+      "license": "Public domain (PD-old: author died more than 70 years ago)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chapel_of_Feodor_Stratilat.jpg",
+      "changes": "Edges trimmed and converted to WebP."
+    },
+    {
+      "id": "pidma-wooden-church",
+      "file": "/images/pd/pidma-wooden-church.webp",
+      "title": "Wooden Church of the Transfiguration of Our Lord, village of Pidma",
+      "author": "Sergei Mikhailovich Prokudin-Gorskii (1863 to 1944)",
+      "date": "1909",
+      "license": "Public domain (PD-old: author died more than 70 years ago)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gorskii_03953u.jpg",
+      "changes": "Edges trimmed, resized and converted to WebP."
+    },
+    {
+      "id": "st-nil-monastery",
+      "file": "/images/pd/st-nil-monastery.webp",
+      "title": "The Monastery of St. Nil on Stolobnyi Island in Lake Seliger",
+      "author": "Sergei Mikhailovich Prokudin-Gorskii (1863 to 1944)",
+      "date": "1910",
+      "license": "Public domain (PD-old: author died more than 70 years ago)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prokudin-Gorskii-09-edit2.jpg",
+      "changes": "Edges trimmed, resized and converted to WebP."
+    },
+    {
+      "id": "kirillov-monastery",
+      "file": "/images/pd/kirillov-monastery.webp",
+      "title": "Kirillo-Belozersky Monastery seen across Lake Siverskoe, Kirillov",
+      "author": "Sergei Mikhailovich Prokudin-Gorskii (1863 to 1944)",
+      "date": "1909",
+      "license": "Public domain (PD-old: author died more than 70 years ago)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kirillov1909.jpg",
+      "changes": "Edges trimmed, resized and converted to WebP."
+    }
+  ]
+}

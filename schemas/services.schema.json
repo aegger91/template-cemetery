@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectorthodox.example/schemas/services.schema.json",
+  "title": "Services and memorial days",
+  "description": "Weekly services repeat every week. Memorial days and cleanup days follow a yearly rule, so the calendar fills itself in every year.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string" },
+    "weekly": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "weekday", "time", "title"],
+        "properties": {
+          "id": { "type": "string" },
+          "weekday": { "enum": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] },
+          "weeksOfMonth": { "type": "array", "items": { "type": "integer", "minimum": 1, "maximum": 5 }, "description": "Limit to these weeks of the month, for example [1] for the first." },
+          "time": { "$ref": "common.schema.json#/$defs/time" },
+          "kind": { "type": "string" },
+          "pauseInBrightWeek": { "type": "boolean", "description": "Not served from Pascha through Thomas Sunday." },
+          "title": { "$ref": "common.schema.json#/$defs/localized" },
+          "place": { "$ref": "common.schema.json#/$defs/localized" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "memorialDays": { "type": "array", "items": { "$ref": "#/$defs/yearly" } },
+    "cleanupDays": { "type": "array", "items": { "$ref": "#/$defs/yearly" } }
+  },
+  "$defs": {
+    "yearly": {
+      "type": "object",
+      "required": ["id", "rule", "title"],
+      "properties": {
+        "id": { "type": "string" },
+        "rule": { "$ref": "common.schema.json#/$defs/rule" },
+        "offsetDays": { "type": "integer" },
+        "time": { "$ref": "common.schema.json#/$defs/time" },
+        "kind": { "type": "string" },
+        "featured": { "type": "boolean" },
+        "title": { "$ref": "common.schema.json#/$defs/localized" },
+        "note": { "$ref": "common.schema.json#/$defs/localized" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

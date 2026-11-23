@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "find-a-grave",
+  "title": { "en": "Find a grave", "ru": "Найти могилу", "el": "Βρείτε έναν τάφο" },
+  "description": {
+    "en": "Search the burial register by name in Latin, Cyrillic or Greek letters, by years or by section.",
+    "ru": "Поиск в книге погребений по имени латиницей, кириллицей или по-гречески, по годам или участку.",
+    "el": "Αναζήτηση στο βιβλίο ταφών με όνομα σε λατινικούς, κυριλλικούς ή ελληνικούς χαρακτήρες, με έτη ή τομέα."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "Type a name in any spelling. Иоанн, Ioann and John all find the same person, as do Γεώργιος and Georgios. Records shown here are fictional samples.",
+        "ru": "Вводите имя в любом написании. Иоанн, Ioann и John находят одного и того же человека, так же как Γεώργιος и Георгиос. Записи здесь вымышленные, для образца.",
+        "el": "Πληκτρολογήστε ένα όνομα με οποιαδήποτε γραφή. Τα Γεώργιος, Georgios και Георгиос βρίσκουν το ίδιο πρόσωπο, όπως και τα Иоанн και Ioann. Οι εγγραφές εδώ είναι φανταστικά δείγματα."
+      }
+    },
+    {
+      "type": "graveSearch",
+      "enabled": true,
+      "pageSize": 12
+    },
+    {
+      "type": "sectionMap",
+      "enabled": true,
+      "id": "map",
+      "heading": { "en": "Map of the sections", "ru": "Схема участков", "el": "Χάρτης των τομέων" },
+      "intro": {
+        "en": "Select a section to see its rows. Rows are counted from the chapel side, plots from the left.",
+        "ru": "Выберите участок, чтобы увидеть ряды. Ряды считаются от часовни, места слева направо.",
+        "el": "Επιλέξτε έναν τομέα για να δείτε τις σειρές του. Οι σειρές μετρούν από την πλευρά του παρεκκλησίου, οι τάφοι από αριστερά."
+      }
+    }
+  ]
+}

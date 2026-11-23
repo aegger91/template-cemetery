@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "volunteer",
+  "title": {
+    "en": "Volunteer cleanup days",
+    "ru": "Дни уборки кладбища",
+    "el": "Ημέρες εθελοντικού καθαρισμού"
+  },
+  "description": {
+    "en": "Join parishioners twice a year to rake, plant and reset crosses. Sign up through OrthodoxConnect.",
+    "ru": "Присоединяйтесь к прихожанам дважды в год: убираем листья, сажаем цветы, поправляем кресты. Запись через OrthodoxConnect.",
+    "el": "Ελάτε με τους ενορίτες δύο φορές τον χρόνο να μαζέψουμε φύλλα, να φυτέψουμε και να ισιώσουμε σταυρούς. Εγγραφή μέσω OrthodoxConnect."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "Cleanup days are held in spring and autumn. Sign up through OrthodoxConnect.",
+        "ru": "Дни уборки проходят весной и осенью. Записаться можно через OrthodoxConnect.",
+        "el": "Οι ημέρες καθαρισμού γίνονται την άνοιξη και το φθινόπωρο. Εγγραφείτε μέσω του OrthodoxConnect."
+      }
+    },
+    {
+      "type": "volunteer",
+      "enabled": true,
+      "id": "dates",
+      "bring": [
+        {
+          "en": "Work gloves and sturdy shoes",
+          "ru": "Рабочие перчатки и прочную обувь",
+          "el": "Γάντια εργασίας και γερά παπούτσια"
+        },
+        {
+          "en": "A rake or garden shears if you have them",
+          "ru": "Грабли или садовые ножницы, если есть",
+          "el": "Τσουγκράνα ή κλαδευτήρι, αν έχετε"
+        },
+        {
+          "en": "Water for yourself",
+          "ru": "Воду для себя",
+          "el": "Νερό για εσάς"
+        }
+      ]
+    }
+  ]
+}

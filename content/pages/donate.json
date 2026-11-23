@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "donate",
+  "title": {
+    "en": "Donate",
+    "ru": "Пожертвовать",
+    "el": "Δωρεά"
+  },
+  "description": {
+    "en": "Give to the perpetual care fund, chapel upkeep or a restoration project.",
+    "ru": "Пожертвования в фонд вечного ухода, на содержание часовни или реставрацию.",
+    "el": "Δωρεά στο ταμείο διαρκούς φροντίδας, στη συντήρηση του παρεκκλησίου ή σε έργο αποκατάστασης."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "Choose a fund for your gift. You may give in memory of someone buried here.",
+        "ru": "Выберите фонд для пожертвования. Можно пожертвовать в память о погребённом здесь.",
+        "el": "Επιλέξτε ταμείο για τη δωρεά σας. Μπορείτε να δωρίσετε στη μνήμη κάποιου που αναπαύεται εδώ."
+      }
+    },
+    {
+      "type": "donateForm",
+      "enabled": true,
+      "id": "give",
+      "amounts": [
+        25,
+        50,
+        100,
+        250
+      ]
+    },
+    {
+      "type": "fundTotals",
+      "enabled": false,
+      "heading": {
+        "en": "Raised so far",
+        "ru": "Собрано на сегодня",
+        "el": "Έχουν συγκεντρωθεί"
+      },
+      "fundIds": [
+        "restoration-gate",
+        "restoration-crosses"
+      ]
+    }
+  ]
+}

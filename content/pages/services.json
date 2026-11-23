@@ -1,0 +1,87 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "services",
+  "title": {
+    "en": "Memorial services",
+    "ru": "Поминальные службы",
+    "el": "Μνημόσυνα και ακολουθίες"
+  },
+  "description": {
+    "en": "Weekly Panikhidas, Memorial Saturdays, Radonitsa and blessings of the graves, with a form to request a service at a grave.",
+    "ru": "Еженедельные панихиды, родительские субботы, Радоница и освящение могил, а также заказ службы на могиле.",
+    "el": "Εβδομαδιαία μνημόσυνα, Ψυχοσάββατα, Ραδονίτσα και ευλογίες των τάφων, με φόρμα για αίτημα ακολουθίας σε τάφο."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "Services at the cemetery chapel and at the graves.",
+        "ru": "Богослужения в кладбищенской часовне и у могил.",
+        "el": "Ακολουθίες στο παρεκκλήσι του κοιμητηρίου και στους τάφους."
+      }
+    },
+    {
+      "type": "upcomingServices",
+      "enabled": true,
+      "heading": {
+        "en": "Memorial days this year",
+        "ru": "Дни поминовения в этом году",
+        "el": "Ημέρες μνήμης φέτος"
+      },
+      "count": 6
+    },
+    {
+      "type": "serviceSchedule",
+      "enabled": true,
+      "id": "schedule",
+      "heading": {
+        "en": "Schedule",
+        "ru": "Расписание",
+        "el": "Πρόγραμμα"
+      },
+      "intro": {
+        "en": "Weekly services and memorial days, by week or by month.",
+        "ru": "Еженедельные службы и дни поминовения по неделям или по месяцам.",
+        "el": "Εβδομαδιαίες ακολουθίες και ημέρες μνήμης, ανά εβδομάδα ή ανά μήνα."
+      }
+    },
+    {
+      "type": "serviceRequestForm",
+      "enabled": true,
+      "id": "request",
+      "heading": {
+        "en": "Request a Panikhida or Litiya at a grave",
+        "ru": "Заказать панихиду или литию на могиле",
+        "el": "Αίτημα για Μνημόσυνο ή Τρισάγιο σε τάφο"
+      },
+      "intro": {
+        "en": "Tell us the grave and the day you would like. A priest will call to confirm.",
+        "ru": "Укажите могилу и желаемый день. Священник перезвонит, чтобы подтвердить.",
+        "el": "Πείτε μας τον τάφο και την ημέρα που επιθυμείτε. Ένας ιερέας θα σας τηλεφωνήσει για επιβεβαίωση."
+      }
+    },
+    {
+      "type": "callToAction",
+      "enabled": true,
+      "heading": {
+        "en": "Send names for commemoration",
+        "ru": "Подать записку об упокоении",
+        "el": "Στείλτε ονόματα για μνημόνευση"
+      },
+      "text": {
+        "en": "Names sent by Friday evening are read at the Saturday Panikhida and at the next Divine Liturgy.",
+        "ru": "Имена, поданные до вечера пятницы, читаются на субботней панихиде и на ближайшей литургии.",
+        "el": "Τα ονόματα που στέλνονται έως το βράδυ της Παρασκευής διαβάζονται στο Μνημόσυνο του Σαββάτου και στην επόμενη Θεία Λειτουργία."
+      },
+      "link": {
+        "page": "services/commemoration",
+        "label": {
+          "en": "Write a note",
+          "ru": "Написать записку",
+          "el": "Γράψτε τα ονόματα"
+        }
+      }
+    }
+  ]
+}

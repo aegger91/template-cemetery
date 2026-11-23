@@ -1,0 +1,18 @@
+{
+  "slavic": {
+    "viewBox": "0 0 60 100",
+    "note": "Eight-pointed Slavic cross: short top bar, main bar, and a slanted footrest whose end on the viewer's LEFT is HIGHER.",
+    "rects": [
+      { "x": 26, "y": 0, "width": 8, "height": 100 },
+      { "x": 17, "y": 12, "width": 26, "height": 6 },
+      { "x": 4, "y": 28, "width": 52, "height": 8 }
+    ],
+    "polygons": ["13,63 47,75 47,82 13,70"]
+  },
+  "byzantine": {
+    "viewBox": "0 0 100 100",
+    "note": "Byzantine equal-armed cross with flared arms.",
+    "rects": [],
+    "polygons": ["40,40 33,4 67,4 60,40 96,33 96,67 60,60 67,96 33,96 40,60 4,67 4,33"]
+  }
+}

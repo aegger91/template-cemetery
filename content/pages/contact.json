@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "contact",
+  "title": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" },
+  "description": {
+    "en": "Address, phone, email, office hours and directions to the cemetery.",
+    "ru": "Адрес, телефон, электронная почта, часы работы конторы и как добраться.",
+    "el": "Διεύθυνση, τηλέφωνο, email, ώρες γραφείου και οδηγίες για το κοιμητήριο."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "If a death has just happened, please call. Someone answers the phone every day.",
+        "ru": "Если человек только что скончался, пожалуйста, позвоните. На звонки отвечают каждый день.",
+        "el": "Αν μόλις συνέβη ένας θάνατος, παρακαλούμε τηλεφωνήστε. Κάποιος απαντά στο τηλέφωνο κάθε μέρα."
+      }
+    },
+    { "type": "contact", "enabled": true, "id": "contact" }
+  ]
+}

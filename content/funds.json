@@ -1,0 +1,57 @@
+{
+  "$schema": "../schemas/funds.schema.json",
+  "funds": [
+    {
+      "id": "perpetual-care",
+      "name": {
+        "en": "Perpetual care fund",
+        "ru": "Фонд вечного ухода",
+        "el": "Ταμείο διαρκούς φροντίδας"
+      },
+      "description": {
+        "en": "Mowing, tree care, paths and fences for every grave.",
+        "ru": "Покос травы, уход за деревьями, дорожки и ограды для каждой могилы.",
+        "el": "Κούρεμα γρασιδιού, φροντίδα δέντρων, μονοπάτια και περιφράξεις για κάθε τάφο."
+      }
+    },
+    {
+      "id": "chapel-upkeep",
+      "name": {
+        "en": "Chapel upkeep",
+        "ru": "Содержание часовни",
+        "el": "Συντήρηση του παρεκκλησίου"
+      },
+      "description": {
+        "en": "Heat in winter, oil for the lampadas, candles, vestments and repairs to the chapel roof and icon screen.",
+        "ru": "Отопление зимой, масло для лампад, свечи, облачения и ремонт кровли и иконостаса часовни.",
+        "el": "Θέρμανση τον χειμώνα, λάδι για τα καντήλια, κεριά, άμφια και επισκευές στη στέγη και στο τέμπλο του παρεκκλησίου."
+      }
+    },
+    {
+      "id": "restoration-gate",
+      "name": {
+        "en": "Restoration: the 1907 iron gate",
+        "ru": "Реставрация: чугунные ворота 1907 года",
+        "el": "Αποκατάσταση: η σιδερένια πύλη του 1907"
+      },
+      "description": {
+        "en": "The original gate is rusting at the hinges. A local smith will repair and repaint it by hand.",
+        "ru": "Исторические ворота ржавеют на петлях. Местный кузнец отремонтирует и покрасит их вручную.",
+        "el": "Η αρχική πύλη έχει σκουριάσει στους μεντεσέδες. Ένας τοπικός σιδεράς θα την επισκευάσει και θα τη βάψει με το χέρι."
+      }
+    },
+    {
+      "id": "restoration-crosses",
+      "name": {
+        "en": "Restoration: old crosses in Section A",
+        "ru": "Реставрация: старые кресты на участке A",
+        "el": "Αποκατάσταση: παλαιοί σταυροί στον Τομέα A"
+      },
+      "description": {
+        "en": "Resetting leaning crosses and re-cutting worn inscriptions on graves from the founding years.",
+        "ru": "Выпрямление покосившихся крестов и восстановление стёршихся надписей на могилах первых лет.",
+        "el": "Ίσιωμα των σταυρών που γέρνουν και ανανέωση των φθαρμένων επιγραφών στους τάφους των πρώτων χρόνων."
+      }
+    }
+  ]
+}

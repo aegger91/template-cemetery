@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectorthodox.example/schemas/site.schema.json",
+  "title": "Site settings",
+  "type": "object",
+  "required": ["name", "languages", "defaultLanguage", "logo", "contact", "visitingHours", "timezone"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "name": { "$ref": "common.schema.json#/$defs/localized" },
+    "shortName": { "$ref": "common.schema.json#/$defs/localized" },
+    "tagline": { "$ref": "common.schema.json#/$defs/localized" },
+    "founded": { "type": "integer" },
+    "languages": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Every language the site is published in. Add as many as you need. Use dir \"rtl\" for Arabic or Hebrew.",
+      "items": {
+        "type": "object",
+        "required": ["code", "label"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})?$" },
+          "label": { "type": "string", "description": "Language name in that language, for the switcher." },
+          "dir": { "enum": ["ltr", "rtl"], "default": "ltr" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "defaultLanguage": { "type": "string" },
+    "logo": {
+      "type": "object",
+      "required": ["style"],
+      "properties": {
+        "style": { "enum": ["seal", "kiot", "square", "wordmark"], "description": "seal: circular seal with the name around a cross. kiot: icon-case frame. square: your own square image. wordmark: name in type only." },
+        "image": { "type": "string", "description": "Used by the square and kiot styles." },
+        "sealTopText": { "$ref": "common.schema.json#/$defs/localized" },
+        "sealBottomText": { "$ref": "common.schema.json#/$defs/localized" }
+      },
+      "additionalProperties": false
+    },
+    "displayFont": { "enum": ["slavonic", "greek", "none"], "description": "Font for the short display phrase. slavonic uses Ponomar, greek uses GFS Didot." },
+    "displayPhrase": { "type": "string", "description": "A short phrase set in the display font, such as Вѣ́чнаѧ па́мѧть or Αἰωνία ἡ μνήμη. Leave empty to hide." },
+    "displayPhraseMeaning": { "$ref": "common.schema.json#/$defs/localized" },
+    "churchCalendar": { "enum": ["new", "old"], "description": "Which calendar fixed feasts follow. Pascha is the same on both." },
+    "timezone": { "type": "string", "description": "IANA time zone of the cemetery, for example America/New_York." },
+    "contact": {
+      "type": "object",
+      "required": ["address", "phone", "email"],
+      "properties": {
+        "address": { "$ref": "common.schema.json#/$defs/localized" },
+        "phone": { "type": "string", "pattern": "^\\(\\d{3}\\)-\\d{3}-\\d{4}$" },
+        "email": { "type": "string", "format": "email" },
+        "directionsUrl": { "type": "string" },
+        "mapEmbedUrl": { "type": "string", "description": "Optional map iframe URL. When empty, the drawn site plan is shown." },
+        "officeHours": { "$ref": "common.schema.json#/$defs/localized" },
+        "parking": { "$ref": "common.schema.json#/$defs/localized" }
+      }
+    },
+    "visitingHours": {
+      "type": "object",
+      "required": ["seasons"],
+      "properties": {
+        "seasons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["from", "to", "days"],
+            "properties": {
+              "name": { "$ref": "common.schema.json#/$defs/localized" },
+              "from": { "type": "string", "pattern": "^\\d{2}-\\d{2}$" },
+              "to": { "type": "string", "pattern": "^\\d{2}-\\d{2}$" },
+              "days": {
+                "type": "object",
+                "propertyNames": { "enum": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] },
+                "additionalProperties": {
+                  "oneOf": [
+                    { "type": "array", "items": { "$ref": "common.schema.json#/$defs/time" }, "minItems": 2, "maxItems": 2 },
+                    { "type": "null" }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "closedDates": { "type": "array", "items": { "type": "string", "pattern": "^\\d{2}-\\d{2}$" } },
+        "note": { "$ref": "common.schema.json#/$defs/localized" }
+      }
+    },
+    "orthodoxConnect": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "organizationId": { "type": "string" },
+        "appLink": { "type": "string", "description": "Deep link into the OrthodoxConnect app." },
+        "webLink": { "type": "string", "description": "Web fallback when the app is not installed." },
+        "newsletter": { "type": "boolean", "description": "Show the footer newsletter signup (only when enabled is true)." }
+      }
+    },
+    "forms": {
+      "type": "object",
+      "properties": {
+        "endpoint": { "type": "string", "description": "Where form submissions are posted as JSON. Empty means demo mode: nothing is sent." }
+      }
+    },
+    "payments": {
+      "type": "object",
+      "properties": {
+        "provider": { "enum": ["demo", "stripe", "authorizeNet", "tithely", "none"] },
+        "currency": { "type": "string" },
+        "publicKey": { "type": "string" }
+      }
+    },
+    "fundTotals": {
+      "type": "object",
+      "description": "Used only by the optional fundTotals section. Totals always come from the payment provider, never typed in.",
+      "properties": {
+        "provider": { "enum": ["none", "sample", "stripe", "authorizeNet", "tithely"] },
+        "endpoint": { "type": "string", "description": "Returns {raised, donors, updatedAt} for {fundId}." }
+      }
+    },
+    "social": { "type": "array", "items": { "type": "object", "properties": { "label": { "type": "string" }, "href": { "type": "string" } } } }
+  },
+  "additionalProperties": false
+}

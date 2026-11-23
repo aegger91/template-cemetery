@@ -1,0 +1,194 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "",
+  "title": {
+    "en": "Home",
+    "ru": "Главная",
+    "el": "Αρχική"
+  },
+  "description": {
+    "en": "Visiting hours, grave search, memorial services and care of the graves at St. Example Orthodox Cemetery.",
+    "ru": "Часы посещения, поиск могил, поминальные службы и уход за могилами на православном кладбище св. Примера.",
+    "el": "Ώρες επισκέψεων, αναζήτηση τάφων, μνημόσυνα και φροντίδα των τάφων στο Ορθόδοξο Κοιμητήριο Αγίου Παραδείγματος."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "enabled": true,
+      "image": {
+        "src": "/images/pd/belozersk-chapel-field.webp",
+        "srcSmall": "/images/pd/belozersk-chapel-field-sm.webp",
+        "alt": {
+          "en": "A small wooden chapel with a dome stands alone in a mown meadow under a pale sky.",
+          "ru": "Небольшая деревянная часовня с куполом одиноко стоит на скошенном лугу под бледным небом.",
+          "el": "Ένα μικρό ξύλινο παρεκκλήσι με τρούλο στέκει μόνο του σε ένα κουρεμένο λιβάδι κάτω από χλωμό ουρανό."
+        },
+        "sourceId": "belozersk-chapel-field"
+      },
+      "intro": {
+        "en": "Families have come to this hillside to pray for their departed for more than a century. You are welcome here.",
+        "ru": "Больше века семьи приходят на этот холм молиться о своих усопших. Мы рады вам.",
+        "el": "Για περισσότερο από έναν αιώνα οι οικογένειες έρχονται σε αυτόν τον λόφο για να προσευχηθούν για τους κεκοιμημένους τους. Είστε ευπρόσδεκτοι."
+      }
+    },
+    {
+      "type": "quickLinks",
+      "enabled": true,
+      "items": [
+        {
+          "icon": "search",
+          "page": "find-a-grave",
+          "label": {
+            "en": "Find a grave",
+            "ru": "Найти могилу",
+            "el": "Βρείτε έναν τάφο"
+          },
+          "text": {
+            "en": "Search the burial register by name, years or section.",
+            "ru": "Поиск в книге погребений по имени, годам или участку.",
+            "el": "Αναζήτηση στο βιβλίο ταφών με όνομα, έτη ή τομέα."
+          }
+        },
+        {
+          "icon": "candle",
+          "page": "services/commemoration",
+          "label": {
+            "en": "Commemoration notes",
+            "ru": "Записки об упокоении",
+            "el": "Ονόματα για μνημόνευση"
+          },
+          "text": {
+            "en": "Send names to be prayed for at the chapel.",
+            "ru": "Подайте имена для поминовения в часовне.",
+            "el": "Στείλτε ονόματα για να μνημονευθούν στο παρεκκλήσι."
+          }
+        },
+        {
+          "icon": "calendar",
+          "page": "services",
+          "label": {
+            "en": "Service schedule",
+            "ru": "Расписание служб",
+            "el": "Πρόγραμμα ακολουθιών"
+          },
+          "text": {
+            "en": "Weekly Panikhidas and the yearly Memorial Saturdays.",
+            "ru": "Еженедельные панихиды и родительские субботы.",
+            "el": "Εβδομαδιαία μνημόσυνα και τα Ψυχοσάββατα του έτους."
+          }
+        },
+        {
+          "icon": "sprout",
+          "page": "grave-care",
+          "label": {
+            "en": "Grave care",
+            "ru": "Уход за могилой",
+            "el": "Φροντίδα τάφου"
+          },
+          "text": {
+            "en": "Ask our grounds team to tend a grave for you.",
+            "ru": "Попросите наших работников ухаживать за могилой.",
+            "el": "Ζητήστε από το προσωπικό μας να φροντίζει έναν τάφο για εσάς."
+          }
+        }
+      ]
+    },
+    {
+      "type": "upcomingServices",
+      "enabled": true,
+      "id": "upcoming",
+      "heading": {
+        "en": "Coming memorial days",
+        "ru": "Ближайшие дни поминовения",
+        "el": "Προσεχείς ημέρες μνήμης"
+      },
+      "intro": {
+        "en": "Services at the chapel and at the graves in the months ahead.",
+        "ru": "Ближайшие богослужения в часовне и у могил.",
+        "el": "Οι επόμενες ακολουθίες στο παρεκκλήσι και στους τάφους."
+      },
+      "count": 4
+    },
+    {
+      "type": "notableBurials",
+      "enabled": true,
+      "heading": {
+        "en": "Those who built this place",
+        "ru": "Те, кто созидал это место",
+        "el": "Εκείνοι που έχτισαν αυτόν τον τόπο"
+      },
+      "intro": {
+        "en": "A few of the people whose prayer and labor shaped the cemetery. These are sample records.",
+        "ru": "Несколько человек, чьи молитвы и труды создали это кладбище. Это образцы записей.",
+        "el": "Μερικοί από τους ανθρώπους που με την προσευχή και τον κόπο τους διαμόρφωσαν το κοιμητήριο. Πρόκειται για εγγραφές-δείγματα."
+      },
+      "recordIds": [
+        "sample-n01",
+        "sample-n02",
+        "sample-n04"
+      ]
+    },
+    {
+      "type": "callToAction",
+      "enabled": true,
+      "image": {
+        "src": "/images/pd/village-churchyard-winter.webp",
+        "alt": {
+          "en": "A village churchyard in winter, with frosted birches, a white church and wooden crosses behind a low fence.",
+          "ru": "Сельский погост зимой: заиндевевшие берёзы, белая церковь и деревянные кресты за низкой оградой.",
+          "el": "Ένα χωριάτικο νεκροταφείο τον χειμώνα, με παγωμένες σημύδες, μια λευκή εκκλησία και ξύλινους σταυρούς πίσω από χαμηλό φράχτη."
+        },
+        "sourceId": "village-churchyard-winter"
+      },
+      "heading": {
+        "en": "Our history",
+        "ru": "Наша история",
+        "el": "Η ιστορία μας"
+      },
+      "text": {
+        "en": "Founded in 1907. Read about the cemetery, its chapel and its founders.",
+        "ru": "Основано в 1907 году. О кладбище, его часовне и основателях.",
+        "el": "Ιδρύθηκε το 1907. Για το κοιμητήριο, το παρεκκλήσι και τους ιδρυτές του."
+      },
+      "link": {
+        "page": "history",
+        "label": {
+          "en": "Read the history",
+          "ru": "Читать историю",
+          "el": "Διαβάστε την ιστορία"
+        }
+      }
+    },
+    {
+      "type": "callToAction",
+      "enabled": true,
+      "tone": "green",
+      "heading": {
+        "en": "Help us keep the graves",
+        "ru": "Помогите нам беречь могилы",
+        "el": "Βοηθήστε μας να φροντίζουμε τους τάφους"
+      },
+      "text": {
+        "en": "Cleanup days are held twice a year. Gifts to the perpetual care fund keep the grounds in order.",
+        "ru": "Дни уборки проходят дважды в год. Пожертвования в фонд вечного ухода поддерживают порядок на кладбище.",
+        "el": "Οι ημέρες καθαρισμού γίνονται δύο φορές τον χρόνο. Οι δωρεές στο ταμείο διαρκούς φροντίδας κρατούν τον χώρο περιποιημένο."
+      },
+      "link": {
+        "page": "volunteer",
+        "label": {
+          "en": "Volunteer cleanup days",
+          "ru": "Дни уборки",
+          "el": "Ημέρες εθελοντικού καθαρισμού"
+        }
+      },
+      "secondaryLink": {
+        "page": "donate",
+        "label": {
+          "en": "Give to perpetual care",
+          "ru": "Пожертвовать на уход",
+          "el": "Δωρεά για τη φροντίδα"
+        }
+      }
+    }
+  ]
+}

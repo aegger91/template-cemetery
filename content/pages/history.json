@@ -1,0 +1,325 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "history",
+  "title": {
+    "en": "History",
+    "ru": "История",
+    "el": "Ιστορία"
+  },
+  "description": {
+    "en": "History of the cemetery, its chapel, founders and notable burials.",
+    "ru": "История кладбища, его часовни, основателей и известных погребений.",
+    "el": "Η ιστορία του κοιμητηρίου, του παρεκκλησίου, των ιδρυτών και των αξιόλογων ταφών."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "Sample text. Replace it with your own cemetery's history.",
+        "ru": "Образец текста. Замените его историей своего кладбища.",
+        "el": "Δείγμα κειμένου. Αντικαταστήστε το με την ιστορία του δικού σας κοιμητηρίου."
+      }
+    },
+    {
+      "type": "historyStory",
+      "enabled": true,
+      "id": "story",
+      "heading": {
+        "en": "The cemetery",
+        "ru": "Кладбище",
+        "el": "Το κοιμητήριο"
+      },
+      "image": {
+        "src": "/images/pd/pidma-wooden-church.webp",
+        "srcSmall": "/images/pd/pidma-wooden-church-sm.webp",
+        "alt": {
+          "en": "A tall wooden church with a steep green roof among spruce trees.",
+          "ru": "Высокая деревянная церковь с крутой зелёной кровлей среди елей.",
+          "el": "Μια ψηλή ξύλινη εκκλησία με απότομη πράσινη στέγη ανάμεσα σε έλατα."
+        },
+        "caption": {
+          "en": "A wooden church of the kind the founders remembered from home. Photograph, 1909.",
+          "ru": "Деревянная церковь, какие основатели помнили по родным местам. Фотография 1909 года.",
+          "el": "Μια ξύλινη εκκλησία σαν αυτές που θυμούνταν οι ιδρυτές από την πατρίδα τους. Φωτογραφία του 1909."
+        },
+        "sourceId": "pidma-wooden-church"
+      },
+      "paragraphs": [
+        {
+          "en": "Founded in 1907 by eleven families on a meadow on Chapel Hill. Today the cemetery has six sections and a stone chapel.",
+          "ru": "Основано в 1907 году одиннадцатью семьями на лугу на Часовенном холме. Сегодня на кладбище шесть участков и каменная часовня.",
+          "el": "Ιδρύθηκε το 1907 από έντεκα οικογένειες σε ένα λιβάδι στον Λόφο του Παρεκκλησίου. Σήμερα το κοιμητήριο έχει έξι τομείς και ένα πέτρινο παρεκκλήσι."
+        }
+      ]
+    },
+    {
+      "type": "historyStory",
+      "enabled": true,
+      "id": "chapel",
+      "heading": {
+        "en": "The chapel of the Dormition",
+        "ru": "Успенская часовня",
+        "el": "Το παρεκκλήσι της Κοιμήσεως"
+      },
+      "imageSide": "end",
+      "image": {
+        "src": "/images/pd/pereslavl-chapel.webp",
+        "srcSmall": "/images/pd/pereslavl-chapel-sm.webp",
+        "alt": {
+          "en": "A red brick chapel with a tall tented roof and a cross, standing at the edge of a pine wood.",
+          "ru": "Краснокирпичная часовня с высоким шатром и крестом на опушке соснового леса.",
+          "el": "Ένα παρεκκλήσι από κόκκινο τούβλο με ψηλή πυραμιδοειδή στέγη και σταυρό, στην άκρη ενός πευκοδάσους."
+        },
+        "caption": {
+          "en": "A brick memorial chapel similar to ours. Photograph, 1911.",
+          "ru": "Кирпичная часовня, похожая на нашу. Фотография 1911 года.",
+          "el": "Ένα πλίνθινο παρεκκλήσι παρόμοιο με το δικό μας. Φωτογραφία του 1911."
+        },
+        "sourceId": "pereslavl-chapel"
+      },
+      "paragraphs": [
+        {
+          "en": "The stone chapel of the Dormition was built in 1928. Services are held here every Saturday.",
+          "ru": "Каменная часовня Успения построена в 1928 году. Службы проходят здесь каждую субботу.",
+          "el": "Το πέτρινο παρεκκλήσι της Κοιμήσεως χτίστηκε το 1928. Εδώ τελούνται ακολουθίες κάθε Σάββατο."
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "enabled": true,
+      "heading": {
+        "en": "Through the years",
+        "ru": "По годам",
+        "el": "Μέσα στα χρόνια"
+      },
+      "items": [
+        {
+          "year": "1907",
+          "text": {
+            "en": "Eleven families buy the meadow on Chapel Hill. First burial in Section A.",
+            "ru": "Одиннадцать семей покупают луг на Часовенном холме. Первое погребение на участке A.",
+            "el": "Έντεκα οικογένειες αγοράζουν το λιβάδι στον Λόφο του Παρεκκλησίου. Πρώτη ταφή στον Τομέα A."
+          }
+        },
+        {
+          "year": "1909",
+          "text": {
+            "en": "The wooden chapel is raised and blessed.",
+            "ru": "Срублена и освящена деревянная часовня.",
+            "el": "Χτίζεται και εγκαινιάζεται το ξύλινο παρεκκλήσι."
+          }
+        },
+        {
+          "year": "1924",
+          "text": {
+            "en": "Section B opens. Elena Sosnovskaia gives the birch grove.",
+            "ru": "Открыт участок B. Елена Сосновская передаёт берёзовую рощу.",
+            "el": "Ανοίγει ο Τομέας B. Η Ελένη Σοσνόφσκαγια δωρίζει το άλσος με τις σημύδες."
+          }
+        },
+        {
+          "year": "1928",
+          "text": {
+            "en": "The stone chapel of the Dormition is consecrated.",
+            "ru": "Освящена каменная Успенская часовня.",
+            "el": "Εγκαινιάζεται το πέτρινο παρεκκλήσι της Κοιμήσεως."
+          }
+        },
+        {
+          "year": "1951",
+          "text": {
+            "en": "Section D opens on the lower meadow.",
+            "ru": "На нижнем лугу открыт участок D.",
+            "el": "Ανοίγει ο Τομέας D στο κάτω λιβάδι."
+          }
+        },
+        {
+          "year": "1970",
+          "text": {
+            "en": "The perpetual care fund is founded.",
+            "ru": "Основан фонд вечного ухода.",
+            "el": "Ιδρύεται το ταμείο διαρκούς φροντίδας."
+          }
+        },
+        {
+          "year": "1978",
+          "text": {
+            "en": "Section E opens beside the new path.",
+            "ru": "У новой дорожки открыт участок E.",
+            "el": "Ανοίγει ο Τομέας E δίπλα στο νέο μονοπάτι."
+          }
+        },
+        {
+          "year": "2015",
+          "text": {
+            "en": "Section F opens near the gate.",
+            "ru": "У ворот открыт участок F.",
+            "el": "Ανοίγει ο Τομέας F κοντά στην πύλη."
+          }
+        }
+      ]
+    },
+    {
+      "type": "founders",
+      "enabled": true,
+      "id": "founders",
+      "heading": {
+        "en": "Founders",
+        "ru": "Основатели",
+        "el": "Οι ιδρυτές"
+      },
+      "intro": {
+        "en": "Fictional founders written for the sample site.",
+        "ru": "Вымышленные основатели, придуманные для образца сайта.",
+        "el": "Φανταστικοί ιδρυτές γραμμένοι για τον δειγματικό ιστότοπο."
+      },
+      "recordIds": [
+        "sample-n01",
+        "sample-n02",
+        "sample-n03"
+      ]
+    },
+    {
+      "type": "notableBurials",
+      "enabled": true,
+      "id": "notable",
+      "heading": {
+        "en": "Notable burials",
+        "ru": "Памятные захоронения",
+        "el": "Αξιομνημόνευτες ταφές"
+      },
+      "intro": {
+        "en": "People remembered for their service to the cemetery and the parish. All are sample records.",
+        "ru": "Люди, которых помнят за их служение кладбищу и приходу. Все записи образцовые, вымышленные.",
+        "el": "Άνθρωποι που τους θυμόμαστε για την προσφορά τους στο κοιμητήριο και στην ενορία. Όλες είναι εγγραφές-δείγματα."
+      },
+      "recordIds": [
+        "sample-n04",
+        "sample-n05",
+        "sample-n06"
+      ]
+    },
+    {
+      "type": "gallery",
+      "enabled": true,
+      "id": "gallery",
+      "heading": {
+        "en": "Photo gallery",
+        "ru": "Фотогалерея",
+        "el": "Φωτογραφίες"
+      },
+      "intro": {
+        "en": "Early color photographs by Sergei Prokudin-Gorskii, in the public domain, standing in for photographs of your own grounds.",
+        "ru": "Ранние цветные фотографии Сергея Прокудина-Горского, общественное достояние. Они временно заменяют снимки вашего кладбища.",
+        "el": "Πρώιμες έγχρωμες φωτογραφίες του Σεργκέι Προκούντιν-Γκόρσκι, κοινό κτήμα, στη θέση φωτογραφιών του δικού σας κοιμητηρίου."
+      },
+      "images": [
+        {
+          "src": "/images/pd/village-churchyard-winter.webp",
+          "alt": {
+            "en": "A village churchyard in winter with frosted birches and wooden crosses.",
+            "ru": "Сельский погост зимой с заиндевевшими берёзами и деревянными крестами.",
+            "el": "Χωριάτικο νεκροταφείο τον χειμώνα με παγωμένες σημύδες και ξύλινους σταυρούς."
+          },
+          "caption": {
+            "en": "Village churchyard in winter, 1905",
+            "ru": "Сельский погост зимой, 1905",
+            "el": "Χωριάτικο νεκροταφείο τον χειμώνα, 1905"
+          },
+          "sourceId": "village-churchyard-winter"
+        },
+        {
+          "src": "/images/pd/belozersk-chapel-field.webp",
+          "srcSmall": "/images/pd/belozersk-chapel-field-sm.webp",
+          "alt": {
+            "en": "A wooden chapel in a mown meadow near Belozersk.",
+            "ru": "Деревянная часовня на скошенном лугу близ Белозерска.",
+            "el": "Ξύλινο παρεκκλήσι σε κουρεμένο λιβάδι κοντά στο Μπελοζέρσκ."
+          },
+          "caption": {
+            "en": "Chapel near Belozersk, 1909",
+            "ru": "Часовня близ Белозерска, 1909",
+            "el": "Παρεκκλήσι κοντά στο Μπελοζέρσκ, 1909"
+          },
+          "sourceId": "belozersk-chapel-field"
+        },
+        {
+          "src": "/images/pd/feodor-stratilat-chapel.webp",
+          "alt": {
+            "en": "A small brick chapel with a pointed roof among trees.",
+            "ru": "Небольшая кирпичная часовня с шатровой кровлей среди деревьев.",
+            "el": "Μικρό πλίνθινο παρεκκλήσι με μυτερή στέγη ανάμεσα σε δέντρα."
+          },
+          "caption": {
+            "en": "Chapel of St. Theodore Stratelates, 1911",
+            "ru": "Часовня Феодора Стратилата, 1911",
+            "el": "Παρεκκλήσι του Αγίου Θεοδώρου του Στρατηλάτου, 1911"
+          },
+          "sourceId": "feodor-stratilat-chapel"
+        },
+        {
+          "src": "/images/pd/st-nil-monastery.webp",
+          "srcSmall": "/images/pd/st-nil-monastery-sm.webp",
+          "alt": {
+            "en": "A white monastery with many domes on an island, reached by a long wooden bridge.",
+            "ru": "Белый многоглавый монастырь на острове, к которому ведёт длинный деревянный мост.",
+            "el": "Λευκό μοναστήρι με πολλούς τρούλους σε νησί, με μακριά ξύλινη γέφυρα."
+          },
+          "caption": {
+            "en": "Monastery of St. Nil, Lake Seliger, 1910",
+            "ru": "Нилова пустынь, озеро Селигер, 1910",
+            "el": "Μονή του Αγίου Νείλου, λίμνη Σελιγκέρ, 1910"
+          },
+          "sourceId": "st-nil-monastery"
+        },
+        {
+          "src": "/images/pd/pidma-wooden-church.webp",
+          "srcSmall": "/images/pd/pidma-wooden-church-sm.webp",
+          "alt": {
+            "en": "A wooden church with a tall green roof among spruce trees.",
+            "ru": "Деревянная церковь с высокой зелёной кровлей среди елей.",
+            "el": "Ξύλινη εκκλησία με ψηλή πράσινη στέγη ανάμεσα σε έλατα."
+          },
+          "caption": {
+            "en": "Church of the Transfiguration, Pidma, 1909",
+            "ru": "Преображенская церковь, Пидьма, 1909",
+            "el": "Ναός της Μεταμορφώσεως, Πίντμα, 1909"
+          },
+          "sourceId": "pidma-wooden-church"
+        },
+        {
+          "src": "/images/pd/kirillov-monastery.webp",
+          "srcSmall": "/images/pd/kirillov-monastery-sm.webp",
+          "alt": {
+            "en": "The long white walls and towers of a monastery seen across a still lake.",
+            "ru": "Длинные белые стены и башни монастыря за тихим озером.",
+            "el": "Τα μακριά λευκά τείχη και οι πύργοι ενός μοναστηριού πέρα από μια ήρεμη λίμνη."
+          },
+          "caption": {
+            "en": "Kirillo-Belozersky Monastery, 1909",
+            "ru": "Кирилло-Белозерский монастырь, 1909",
+            "el": "Μονή Κιρίλλου Μπελοζέρσκ, 1909"
+          },
+          "sourceId": "kirillov-monastery"
+        },
+        {
+          "src": "/images/pd/pereslavl-chapel.webp",
+          "srcSmall": "/images/pd/pereslavl-chapel-sm.webp",
+          "alt": {
+            "en": "A red brick chapel with a tall tented roof at the edge of a pine wood.",
+            "ru": "Краснокирпичная шатровая часовня на опушке соснового леса.",
+            "el": "Παρεκκλήσι από κόκκινο τούβλο με ψηλή στέγη στην άκρη πευκοδάσους."
+          },
+          "caption": {
+            "en": "Chapel near Pereslavl-Zalesskii, 1911",
+            "ru": "Часовня близ Переславля-Залесского, 1911",
+            "el": "Παρεκκλήσι κοντά στο Περεσλάβλ-Ζαλέσκι, 1911"
+          },
+          "sourceId": "pereslavl-chapel"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectorthodox.example/schemas/funds.schema.json",
+  "title": "Donation funds",
+  "description": "Funds a donor can pick. Raised totals are never typed here; the optional fundTotals section reads them from the payment provider.",
+  "type": "object",
+  "required": ["funds"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "funds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Tag payments with this id at the provider." },
+          "name": { "$ref": "common.schema.json#/$defs/localized" },
+          "description": { "$ref": "common.schema.json#/$defs/localized" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

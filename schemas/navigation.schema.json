@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectorthodox.example/schemas/navigation.schema.json",
+  "title": "Menus",
+  "type": "object",
+  "required": [
+    "header"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "header": {
+      "type": "array",
+      "description": "Top menu. An item with children becomes a dropdown.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "string",
+            "description": "Slug of a page in content/pages."
+          },
+          "anchor": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string",
+            "description": "External link. Use instead of page."
+          },
+          "label": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "children": {
+            "type": "array",
+            "description": "Links shown in the dropdown.",
+            "items": {
+              "$ref": "common.schema.json#/$defs/pageLink"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "donate": {
+      "$ref": "common.schema.json#/$defs/pageLink",
+      "description": "Shown as a button at the end of the menu."
+    },
+    "footer": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/pageLink"
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

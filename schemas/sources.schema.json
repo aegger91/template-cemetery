@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectorthodox.example/schemas/sources.schema.json",
+  "title": "Image sources",
+  "type": "object",
+  "required": ["images"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "file", "title", "author", "license", "sourceUrl"],
+        "properties": {
+          "id": { "type": "string" },
+          "file": { "type": "string" },
+          "title": { "type": "string" },
+          "author": { "type": "string" },
+          "date": { "type": "string" },
+          "license": { "type": "string" },
+          "sourceUrl": { "type": "string" },
+          "changes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

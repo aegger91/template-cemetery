@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "plots",
+  "title": {
+    "en": "Plots and arrangements",
+    "ru": "Участки и погребение",
+    "el": "Τάφοι και διευθετήσεις"
+  },
+  "description": {
+    "en": "Plot availability, planning ahead and grave care.",
+    "ru": "Наличие мест, заблаговременное планирование и уход за могилами.",
+    "el": "Διαθεσιμότητα τάφων, προγραμματισμός και φροντίδα τάφων."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "The office can help with plots and burial arrangements. Call us at any time.",
+        "ru": "Контора поможет с выбором места и организацией погребения. Звоните в любое время.",
+        "el": "Το γραφείο βοηθά με τους τάφους και τις διευθετήσεις ταφής. Καλέστε μας οποιαδήποτε ώρα."
+      }
+    },
+    {
+      "type": "plotsAvailability",
+      "enabled": true,
+      "id": "availability",
+      "heading": {
+        "en": "Plot availability",
+        "ru": "Свободные места",
+        "el": "Διαθέσιμοι τάφοι"
+      },
+      "intro": {
+        "en": "Updated by the office each month. Ask us for current prices.",
+        "ru": "Обновляется конторой ежемесячно. Цены уточняйте в конторе.",
+        "el": "Ενημερώνεται από το γραφείο κάθε μήνα. Ρωτήστε μας για τις τρέχουσες τιμές."
+      }
+    },
+    {
+      "type": "preplanningForm",
+      "enabled": true,
+      "id": "preplanning",
+      "heading": {
+        "en": "Planning ahead",
+        "ru": "Заблаговременная подготовка",
+        "el": "Προγραμματισμός από πριν"
+      },
+      "intro": {
+        "en": "Send a few details and the office will contact you.",
+        "ru": "Оставьте несколько сведений, и контора свяжется с вами.",
+        "el": "Στείλτε μερικά στοιχεία και το γραφείο θα επικοινωνήσει μαζί σας."
+      }
+    },
+    {
+      "type": "callToAction",
+      "enabled": true,
+      "heading": {
+        "en": "Already have a family grave?",
+        "ru": "У вас уже есть семейная могила?",
+        "el": "Έχετε ήδη οικογενειακό τάφο;"
+      },
+      "text": {
+        "en": "The grounds team can tend a family grave on your behalf.",
+        "ru": "Работники кладбища могут ухаживать за семейной могилой по вашей просьбе.",
+        "el": "Η ομάδα του κοιμητηρίου μπορεί να φροντίσει έναν οικογενειακό τάφο για λογαριασμό σας."
+      },
+      "link": {
+        "page": "grave-care",
+        "label": {
+          "en": "Request grave care",
+          "ru": "Заказать уход",
+          "el": "Αίτημα φροντίδας"
+        }
+      }
+    }
+  ]
+}

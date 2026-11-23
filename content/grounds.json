@@ -1,0 +1,194 @@
+{
+  "$schema": "../schemas/grounds.schema.json",
+  "width": 1000,
+  "height": 660,
+  "sections": [
+    {
+      "id": "A",
+      "name": {
+        "en": "Section A",
+        "ru": "Участок A",
+        "el": "Τομέας A"
+      },
+      "description": {
+        "en": "The oldest section, opened in 1907 along the birch alley.",
+        "ru": "Самый старый участок, открыт в 1907 году вдоль берёзовой аллеи.",
+        "el": "Ο παλαιότερος τομέας, άνοιξε το 1907 κατά μήκος της αλέας με τις σημύδες."
+      },
+      "x": 60,
+      "y": 190,
+      "w": 390,
+      "h": 140,
+      "rows": 8,
+      "plotsPerRow": 22,
+      "availablePlots": 0
+    },
+    {
+      "id": "B",
+      "name": {
+        "en": "Section B",
+        "ru": "Участок B",
+        "el": "Τομέας B"
+      },
+      "description": {
+        "en": "Opened in 1924. Family plots with low iron fences.",
+        "ru": "Открыт в 1924 году. Семейные участки с низкими оградами.",
+        "el": "Άνοιξε το 1924. Οικογενειακοί τάφοι με χαμηλά σιδερένια κάγκελα."
+      },
+      "x": 550,
+      "y": 190,
+      "w": 390,
+      "h": 140,
+      "rows": 8,
+      "plotsPerRow": 22,
+      "availablePlots": 2
+    },
+    {
+      "id": "C",
+      "name": {
+        "en": "Clergy section",
+        "ru": "Участок духовенства",
+        "el": "Τομέας κληρικών"
+      },
+      "description": {
+        "en": "Beside the chapel, for clergy, monastics and their families.",
+        "ru": "Рядом с часовней, для священнослужителей, монашествующих и их семей.",
+        "el": "Δίπλα στο παρεκκλήσιο, για κληρικούς, μοναχούς και τις οικογένειές τους."
+      },
+      "x": 260,
+      "y": 50,
+      "w": 170,
+      "h": 100,
+      "rows": 3,
+      "plotsPerRow": 10,
+      "availablePlots": 0
+    },
+    {
+      "id": "D",
+      "name": {
+        "en": "Section D",
+        "ru": "Участок D",
+        "el": "Τομέας D"
+      },
+      "description": {
+        "en": "Opened in 1951 on the lower meadow.",
+        "ru": "Открыт в 1951 году на нижнем лугу.",
+        "el": "Άνοιξε το 1951 στο κάτω λιβάδι."
+      },
+      "x": 60,
+      "y": 380,
+      "w": 390,
+      "h": 140,
+      "rows": 8,
+      "plotsPerRow": 22,
+      "availablePlots": 6
+    },
+    {
+      "id": "E",
+      "name": {
+        "en": "Section E",
+        "ru": "Участок E",
+        "el": "Τομέας E"
+      },
+      "description": {
+        "en": "Opened in 1978. Flat markers and upright crosses are both allowed.",
+        "ru": "Открыт в 1978 году. Допускаются плиты и вертикальные кресты.",
+        "el": "Άνοιξε το 1978. Επιτρέπονται επίπεδες πλάκες και όρθιοι σταυροί."
+      },
+      "x": 550,
+      "y": 380,
+      "w": 390,
+      "h": 140,
+      "rows": 8,
+      "plotsPerRow": 22,
+      "availablePlots": 14
+    },
+    {
+      "id": "F",
+      "name": {
+        "en": "Section F (new)",
+        "ru": "Участок F (новый)",
+        "el": "Τομέας F (νέος)"
+      },
+      "description": {
+        "en": "The newest section near the gate. Most plots here are still open.",
+        "ru": "Новейший участок у ворот. Большинство мест здесь свободны.",
+        "el": "Ο νεότερος τομέας κοντά στην πύλη. Οι περισσότεροι τάφοι είναι ακόμη διαθέσιμοι."
+      },
+      "x": 600,
+      "y": 556,
+      "w": 340,
+      "h": 66,
+      "rows": 3,
+      "plotsPerRow": 20,
+      "availablePlots": 36
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "chapel",
+      "kind": "chapel",
+      "x": 455,
+      "y": 40,
+      "w": 90,
+      "h": 110,
+      "label": {
+        "en": "Chapel",
+        "ru": "Часовня",
+        "el": "Παρεκκλήσιο"
+      }
+    },
+    {
+      "id": "gate",
+      "kind": "gate",
+      "x": 470,
+      "y": 628,
+      "w": 60,
+      "h": 20,
+      "label": {
+        "en": "Main gate",
+        "ru": "Главные ворота",
+        "el": "Κεντρική πύλη"
+      }
+    },
+    {
+      "id": "office",
+      "kind": "building",
+      "x": 380,
+      "y": 566,
+      "w": 70,
+      "h": 46,
+      "label": {
+        "en": "Office",
+        "ru": "Контора",
+        "el": "Γραφείο"
+      }
+    },
+    {
+      "id": "parking",
+      "kind": "parking",
+      "x": 60,
+      "y": 556,
+      "w": 300,
+      "h": 66,
+      "label": {
+        "en": "Parking",
+        "ru": "Парковка",
+        "el": "Στάθμευση"
+      }
+    },
+    {
+      "id": "water",
+      "kind": "water",
+      "x": 590,
+      "y": 90,
+      "w": 28,
+      "h": 28,
+      "label": {
+        "en": "Water tap",
+        "ru": "Вода",
+        "el": "Βρύση"
+      }
+    }
+  ]
+}

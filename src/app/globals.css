@@ -1,0 +1,185 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Raw values come from content/tokens.json as --tk-* variables, set on <html> by the layout. */
+@theme inline {
+  --color-birch: var(--tk-color-birch);
+  --color-birch-deep: var(--tk-color-birchDeep);
+  --color-paper: var(--tk-color-paper);
+  --color-stone: var(--tk-color-stone);
+  --color-stone-deep: var(--tk-color-stoneDeep);
+  --color-slate: var(--tk-color-slate);
+  --color-ink: var(--tk-color-ink);
+  --color-green: var(--tk-color-green);
+  --color-green-mid: var(--tk-color-greenMid);
+  --color-green-soft: var(--tk-color-greenSoft);
+  --color-moss: var(--tk-color-moss);
+  --color-gold: var(--tk-color-gold);
+  --color-gold-soft: var(--tk-color-goldSoft);
+  --color-line: var(--tk-color-line);
+  --color-danger: var(--tk-color-danger);
+
+  --font-sans: var(--tk-font-body);
+  --font-heading: var(--tk-font-heading);
+  --font-display: var(--display-font);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: var(--tk-radius-small);
+  --radius-md: calc(var(--tk-radius-base) * 0.8);
+  --radius-lg: var(--tk-radius-base);
+  --radius-xl: var(--tk-radius-large);
+  --radius-2xl: calc(var(--tk-radius-large) * 1.4);
+
+  --motion-duration: var(--tk-motion-duration);
+  --motion-easing: var(--tk-motion-easing);
+  --container-site: var(--tk-layout-maxWidth);
+}
+
+:root {
+  --background: var(--tk-color-birch);
+  --foreground: var(--tk-color-ink);
+  --card: var(--tk-color-paper);
+  --card-foreground: var(--tk-color-ink);
+  --popover: var(--tk-color-paper);
+  --popover-foreground: var(--tk-color-ink);
+  --primary: var(--tk-color-green);
+  --primary-foreground: var(--tk-color-paper);
+  --secondary: var(--tk-color-birchDeep);
+  --secondary-foreground: var(--tk-color-green);
+  --muted: var(--tk-color-birchDeep);
+  --muted-foreground: var(--tk-color-slate);
+  --accent: var(--tk-color-greenSoft);
+  --accent-foreground: var(--tk-color-green);
+  --destructive: var(--tk-color-danger);
+  --border: var(--tk-color-line);
+  --input: var(--tk-color-stone);
+  --ring: var(--tk-color-gold);
+  --radius: var(--tk-radius-base);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--tk-layout-headerHeight) + 1.5rem);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    overflow-x: clip;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+    color: var(--tk-color-green);
+    font-weight: 500;
+    line-height: 1.15;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  a {
+    text-underline-offset: 0.2em;
+  }
+  :focus-visible {
+    outline: 2px solid var(--tk-color-gold);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .container-site {
+    width: 100%;
+    max-width: var(--tk-layout-maxWidth);
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 640px) {
+    .container-site {
+      padding-inline: 2rem;
+    }
+  }
+  .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--tk-color-gold);
+    font-weight: 600;
+  }
+  .prose-quiet p + p {
+    margin-top: 1rem;
+  }
+  .rule-ornament {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--tk-color-gold);
+  }
+  .rule-ornament::before,
+  .rule-ornament::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: currentColor;
+    opacity: 0.45;
+  }
+}
+
+/* Restrained motion: a slow fade-up as sections enter, turned off for visitors who ask for less motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    animation: reveal 900ms var(--tk-motion-easing) both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+  }
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}

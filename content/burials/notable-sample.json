@@ -1,0 +1,161 @@
+{
+  "$schema": "../../schemas/burials.schema.json",
+  "dataset": {
+    "name": "Notable sample burials",
+    "sample": true,
+    "note": "Fictional people written for the demo. Replace with real records only with the family's blessing."
+  },
+  "records": [
+    {
+      "id": "sample-n01",
+      "sample": true,
+      "notable": true,
+      "title": { "en": "Archpriest", "ru": "Протоиерей", "el": "Πρωτοπρεσβύτερος" },
+      "name": { "script": "Cyrl", "native": "Василий Иоаннович Примеров", "latin": "Vasilii Ioannovich Primerov", "variants": ["Basil Primerov", "Βασίλειος Πρίμεροφ"] },
+      "born": "1861-01-14",
+      "reposed": "1931-11-21",
+      "section": "C", "row": 1, "plot": 5,
+      "marker": "slavic-wood",
+      "photo": null,
+      "summary": {
+        "en": "Founding priest. Led the small community that bought the meadow in 1907.",
+        "ru": "Первый настоятель. Возглавил общину, купившую луг в 1907 году.",
+        "el": "Ο πρώτος ιερέας. Ηγήθηκε της μικρής κοινότητας που αγόρασε το λιβάδι το 1907."
+      },
+      "bio": {
+        "en": "Father Vasilii arrived with eleven families in 1906 and served the first burials in an open field with a borrowed censer. He raised the wooden chapel in 1909 with his own hands and kept the first burial register in a school exercise book. This is a fictional sample record.",
+        "ru": "Отец Василий приехал вместе с одиннадцатью семьями в 1906 году и совершал первые погребения в чистом поле с одолженным кадилом. В 1909 году он своими руками поставил деревянную часовню и вёл первую книгу погребений в школьной тетради. Это вымышленная демонстрационная запись.",
+        "el": "Ο π. Βασίλειος ήρθε μαζί με έντεκα οικογένειες το 1906 και τέλεσε τις πρώτες ταφές σε ανοιχτό χωράφι με ένα δανεικό θυμιατό. Το 1909 έχτισε με τα χέρια του το ξύλινο παρεκκλήσι και κρατούσε το πρώτο βιβλίο ταφών σε ένα σχολικό τετράδιο. Πρόκειται για φανταστική εγγραφή-δείγμα."
+      },
+      "clergy": [
+        { "name": { "en": "Priest Georgii Kholmogorov", "ru": "Иерей Георгий Холмогоров", "el": "Ιερέας Γεώργιος Χολμογκόροφ" }, "role": "funeral" }
+      ]
+    },
+    {
+      "id": "sample-n02",
+      "sample": true,
+      "notable": true,
+      "name": { "script": "Cyrl", "native": "Елена Андреевна Сосновская", "latin": "Elena Andreevna Sosnovskaia", "variants": ["Helen Sosnovsky", "Ελένη Σοσνόφσκαγια"] },
+      "born": "1868-05-21",
+      "reposed": "1940-02-08",
+      "section": "A", "row": 1, "plot": 1,
+      "marker": "slavic-wood",
+      "photo": null,
+      "summary": {
+        "en": "Benefactor. Gave the birch grove and paid for the stone chapel of 1928.",
+        "ru": "Благотворительница. Передала берёзовую рощу и оплатила каменную часовню 1928 года.",
+        "el": "Δωρήτρια. Δώρισε το άλσος με τις σημύδες και πλήρωσε το πέτρινο παρεκκλήσι του 1928."
+      },
+      "bio": {
+        "en": "A widow who ran a dry goods shop on Main Street, Elena gave the grove beside the meadow so that the dead would rest under birches as in the old country. She asked that her own grave have only a wooden cross with a small roof. This is a fictional sample record.",
+        "ru": "Вдова, державшая лавку на главной улице, Елена Андреевна подарила рощу у луга, чтобы усопшие покоились под берёзами, как на родине. Для своей могилы она просила только деревянный крест с голубцом. Это вымышленная демонстрационная запись.",
+        "el": "Χήρα που διατηρούσε κατάστημα στον κεντρικό δρόμο, η Ελένη δώρισε το άλσος δίπλα στο λιβάδι, ώστε οι κεκοιμημένοι να αναπαύονται κάτω από σημύδες όπως στην πατρίδα. Για τον δικό της τάφο ζήτησε μόνο έναν ξύλινο σταυρό με μικρή στέγη. Πρόκειται για φανταστική εγγραφή-δείγμα."
+      },
+      "clergy": [
+        { "name": { "en": "Priest Georgii Kholmogorov", "ru": "Иерей Георгий Холмогоров", "el": "Ιερέας Γεώργιος Χολμογκόροφ" }, "role": "funeral" }
+      ]
+    },
+    {
+      "id": "sample-n03",
+      "sample": true,
+      "notable": true,
+      "name": { "script": "Grek", "native": "Γεώργιος Δειγματίδης", "latin": "Georgios Deigmatidis", "variants": ["George Deigmatidis", "Георгиос Дейгматидис"] },
+      "born": "1879-04-23",
+      "reposed": "1952-09-14",
+      "section": "B", "row": 1, "plot": 1,
+      "marker": "byzantine-stone",
+      "photo": null,
+      "summary": {
+        "en": "Stonemason. Cut the first stone crosses and laid the chapel foundation.",
+        "ru": "Каменотёс. Вырезал первые каменные кресты и заложил фундамент часовни.",
+        "el": "Λιθοξόος. Σκάλισε τους πρώτους πέτρινους σταυρούς και έθεσε τα θεμέλια του παρεκκλησίου."
+      },
+      "bio": {
+        "en": "Georgios came from an island village of stone carvers. For thirty years he cut crosses for families who could not pay, asking only that they pray for his parents. This is a fictional sample record.",
+        "ru": "Георгиос был родом из островной деревни каменотёсов. Тридцать лет он вырезал кресты для семей, которые не могли заплатить, и просил лишь молиться о его родителях. Это вымышленная демонстрационная запись.",
+        "el": "Ο Γεώργιος καταγόταν από ένα νησιώτικο χωριό λιθοξόων. Για τριάντα χρόνια σκάλιζε σταυρούς για οικογένειες που δεν μπορούσαν να πληρώσουν και ζητούσε μόνο να προσεύχονται για τους γονείς του. Πρόκειται για φανταστική εγγραφή-δείγμα."
+      },
+      "clergy": [
+        { "name": { "en": "Priest Georgii Kholmogorov", "ru": "Иерей Георгий Холмогоров", "el": "Ιερέας Γεώργιος Χολμογκόροφ" }, "role": "funeral" },
+        { "name": { "en": "Protodeacon Andrei Sosnovskii", "ru": "Протодиакон Андрей Сосновский", "el": "Πρωτοδιάκονος Ανδρέας Σοσνόφσκι" }, "role": "deacon" }
+      ]
+    },
+    {
+      "id": "sample-n04",
+      "sample": true,
+      "notable": true,
+      "title": { "en": "Nun", "ru": "Монахиня", "el": "Μοναχή" },
+      "name": { "script": "Cyrl", "native": "Ксения (Холмогорова)", "latin": "Kseniia (Kholmogorova)", "variants": ["Xenia Kholmogorova", "Ξένια Χολμογκόροβα"] },
+      "born": "1890",
+      "reposed": "1977-06-19",
+      "section": "C", "row": 2, "plot": 3,
+      "marker": "slavic-wood",
+      "photo": null,
+      "summary": {
+        "en": "Kept the chapel lampadas lit for forty years and copied the burial register by hand.",
+        "ru": "Сорок лет поддерживала огонь в лампадах часовни и переписывала книгу погребений от руки.",
+        "el": "Επί σαράντα χρόνια κρατούσε αναμμένα τα καντήλια του παρεκκλησίου και αντέγραφε με το χέρι το βιβλίο ταφών."
+      },
+      "bio": {
+        "en": "Mother Kseniia lived in the small house by the gate. She knew where every family was buried and walked visitors to the grave they were looking for. Her copy of the register is the source for the oldest records on this site. This is a fictional sample record.",
+        "ru": "Матушка Ксения жила в домике у ворот. Она знала, где похоронена каждая семья, и сама провожала посетителей к нужной могиле. Её список книги погребений лёг в основу самых старых записей на этом сайте. Это вымышленная демонстрационная запись.",
+        "el": "Η μοναχή Ξένια ζούσε στο σπιτάκι δίπλα στην πύλη. Ήξερε πού ήταν θαμμένη κάθε οικογένεια και οδηγούσε η ίδια τους επισκέπτες στον τάφο που αναζητούσαν. Το αντίγραφό της από το βιβλίο ταφών είναι η πηγή για τις παλαιότερες εγγραφές αυτής της σελίδας. Πρόκειται για φανταστική εγγραφή-δείγμα."
+      },
+      "clergy": [
+        { "name": { "en": "Archpriest Dimitrios Deigmatidis", "ru": "Протоиерей Димитрий Дейгматидис", "el": "Πρωτοπρεσβύτερος Δημήτριος Δειγματίδης" }, "role": "funeral" },
+        { "name": { "en": "Protodeacon Andrei Sosnovskii", "ru": "Протодиакон Андрей Сосновский", "el": "Πρωτοδιάκονος Ανδρέας Σοσνόφσκι" }, "role": "deacon" }
+      ]
+    },
+    {
+      "id": "sample-n05",
+      "sample": true,
+      "notable": true,
+      "name": { "script": "Latn", "native": "Paraschiva Mostreanu", "latin": "Paraschiva Mostreanu", "variants": ["Параскева Мостряну", "Παρασκευή Μοστρεάνου"] },
+      "born": "1915-10-14",
+      "reposed": "1999-03-02",
+      "section": "D", "row": 1, "plot": 1,
+      "marker": "byzantine-stone",
+      "photo": null,
+      "summary": {
+        "en": "Led the chapel choir for fifty years and taught the funeral hymns to three generations.",
+        "ru": "Пятьдесят лет руководила хором часовни и научила погребальным песнопениям три поколения.",
+        "el": "Διηύθυνε τη χορωδία του παρεκκλησίου για πενήντα χρόνια και δίδαξε τους ύμνους της εξοδίου ακολουθίας σε τρεις γενιές."
+      },
+      "bio": {
+        "en": "Paraschiva sang in three languages and kept handwritten music for every service in a tin box under the kliros. At her own funeral the choir she had trained sang without books. This is a fictional sample record.",
+        "ru": "Параскева пела на трёх языках и хранила рукописные ноты ко всем службам в жестяной коробке под клиросом. На её отпевании хор, который она вырастила, пел без нот. Это вымышленная демонстрационная запись.",
+        "el": "Η Παρασκευή έψαλλε σε τρεις γλώσσες και φύλαγε χειρόγραφες παρτιτούρες για κάθε ακολουθία σε ένα τενεκεδένιο κουτί κάτω από το αναλόγιο. Στην κηδεία της η χορωδία που είχε διδάξει έψαλε χωρίς βιβλία. Πρόκειται για φανταστική εγγραφή-δείγμα."
+      },
+      "clergy": [
+        { "name": { "en": "Priest Ioan Pildescu", "ru": "Иерей Иоанн Пилдеску", "el": "Ιερέας Ιωάννης Πίλντεσκου" }, "role": "funeral" },
+        { "name": { "en": "Deacon Nikolaos Pefkakis", "ru": "Диакон Николай Пефкакис", "el": "Διάκονος Νικόλαος Πευκάκης" }, "role": "deacon" }
+      ]
+    },
+    {
+      "id": "sample-n06",
+      "sample": true,
+      "notable": true,
+      "title": { "en": "Archpriest", "ru": "Протоиерей", "el": "Πρωτοπρεσβύτερος" },
+      "name": { "script": "Grek", "native": "Δημήτριος Δειγματίδης", "latin": "Dimitrios Deigmatidis", "variants": ["Demetrius Deigmatidis", "Димитрий Дейгматидис"] },
+      "born": "1921-10-26",
+      "reposed": "2004-12-06",
+      "section": "C", "row": 1, "plot": 6,
+      "marker": "byzantine-stone",
+      "photo": null,
+      "summary": {
+        "en": "Son of the stonemason. Served at the chapel from 1962 to 1995 and opened Sections D and E.",
+        "ru": "Сын каменотёса. Служил в часовне с 1962 по 1995 год, при нём открыты участки D и E.",
+        "el": "Γιος του λιθοξόου. Υπηρέτησε στο παρεκκλήσι από το 1962 έως το 1995 και άνοιξε τους Τομείς D και E."
+      },
+      "bio": {
+        "en": "Father Dimitrios grew up carrying water for his father's workshop. As priest he started the Saturday Panikhida that is still served every week and began the perpetual care fund in 1970. This is a fictional sample record.",
+        "ru": "Отец Димитрий с детства носил воду в мастерскую отца. Став священником, он ввёл еженедельную субботнюю панихиду, которая служится до сих пор, и в 1970 году основал фонд вечного ухода. Это вымышленная демонстрационная запись.",
+        "el": "Ο π. Δημήτριος μεγάλωσε κουβαλώντας νερό στο εργαστήρι του πατέρα του. Ως ιερέας καθιέρωσε το Μνημόσυνο του Σαββάτου που τελείται ακόμη κάθε εβδομάδα και ίδρυσε το ταμείο διαρκούς φροντίδας το 1970. Πρόκειται για φανταστική εγγραφή-δείγμα."
+      },
+      "clergy": [
+        { "name": { "en": "Priest Ioan Pildescu", "ru": "Иерей Иоанн Пилдеску", "el": "Ιερέας Ιωάννης Πίλντεσκου" }, "role": "funeral" },
+        { "name": { "en": "Deacon Nikolaos Pefkakis", "ru": "Диакон Николай Пефкакис", "el": "Διάκονος Νικόλαος Πευκάκης" }, "role": "deacon" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "../schemas/site.schema.json",
+  "name": {
+    "en": "St. Example Orthodox Cemetery",
+    "ru": "Православное кладбище св. Примера",
+    "el": "Ορθόδοξο Κοιμητήριο Αγίου Παραδείγματος"
+  },
+  "shortName": {
+    "en": "St. Example Cemetery",
+    "ru": "Кладбище св. Примера",
+    "el": "Κοιμητήριο Αγ. Παραδείγματος"
+  },
+  "tagline": {
+    "en": "A quiet place of prayer and remembrance since 1907",
+    "ru": "Тихое место молитвы и памяти с 1907 года",
+    "el": "Ένας ήσυχος τόπος προσευχής και μνήμης από το 1907"
+  },
+  "founded": 1907,
+  "languages": [
+    { "code": "en", "label": "English", "dir": "ltr" },
+    { "code": "ru", "label": "Русский", "dir": "ltr" },
+    { "code": "el", "label": "Ελληνικά", "dir": "ltr" }
+  ],
+  "defaultLanguage": "en",
+  "logo": {
+    "style": "seal",
+    "image": "/images/logo-square.svg",
+    "sealTopText": {
+      "en": "St. Example Orthodox Cemetery",
+      "ru": "Православное кладбище св. Примера",
+      "el": "Ορθόδοξο Κοιμητήριο Αγ. Παραδείγματος"
+    },
+    "sealBottomText": {
+      "en": "Founded 1907",
+      "ru": "Основано в 1907",
+      "el": "Ιδρύθηκε το 1907"
+    }
+  },
+  "displayFont": "slavonic",
+  "displayPhrase": "Вѣ́чнаѧ па́мѧть",
+  "displayPhraseMeaning": {
+    "en": "Memory eternal",
+    "ru": "Вечная память",
+    "el": "Αιωνία η μνήμη"
+  },
+  "churchCalendar": "new",
+  "timezone": "America/New_York",
+  "contact": {
+    "address": {
+      "en": "1 Chapel Hill Road, Exampleville, ST 00000",
+      "ru": "1 Chapel Hill Road, Exampleville, ST 00000",
+      "el": "1 Chapel Hill Road, Exampleville, ST 00000"
+    },
+    "phone": "(555)-010-0190",
+    "email": "office@example.org",
+    "directionsUrl": "https://www.openstreetmap.org/directions",
+    "mapEmbedUrl": "",
+    "officeHours": {
+      "en": "Office: Monday to Friday 9:00 to 16:00, Saturday 9:00 to 13:00",
+      "ru": "Контора: с понедельника по пятницу с 9:00 до 16:00, в субботу с 9:00 до 13:00",
+      "el": "Γραφείο: Δευτέρα έως Παρασκευή 9:00 έως 16:00, Σάββατο 9:00 έως 13:00"
+    },
+    "parking": {
+      "en": "Free parking inside the main gate. The lower lot is level and closest to the chapel ramp.",
+      "ru": "Бесплатная парковка у главных ворот. Нижняя площадка ровная и ближе всего к пандусу у часовни.",
+      "el": "Δωρεάν στάθμευση μέσα από την κεντρική πύλη. Ο κάτω χώρος είναι επίπεδος και πιο κοντά στη ράμπα του παρεκκλησίου."
+    }
+  },
+  "visitingHours": {
+    "seasons": [
+      {
+        "name": { "en": "Summer hours", "ru": "Летнее время", "el": "Θερινό ωράριο" },
+        "from": "04-01",
+        "to": "10-31",
+        "days": {
+          "mon": ["08:00", "19:00"],
+          "tue": ["08:00", "19:00"],
+          "wed": ["08:00", "19:00"],
+          "thu": ["08:00", "19:00"],
+          "fri": ["08:00", "19:00"],
+          "sat": ["07:30", "19:00"],
+          "sun": ["07:30", "19:00"]
+        }
+      },
+      {
+        "name": { "en": "Winter hours", "ru": "Зимнее время", "el": "Χειμερινό ωράριο" },
+        "from": "11-01",
+        "to": "03-31",
+        "days": {
+          "mon": ["08:00", "16:30"],
+          "tue": ["08:00", "16:30"],
+          "wed": ["08:00", "16:30"],
+          "thu": ["08:00", "16:30"],
+          "fri": ["08:00", "16:30"],
+          "sat": ["08:00", "16:30"],
+          "sun": ["08:00", "16:30"]
+        }
+      }
+    ],
+    "closedDates": ["12-25"],
+    "note": {
+      "en": "Gates close promptly. On Radonitsa and Memorial Saturdays the grounds stay open until the last blessing is served.",
+      "ru": "Ворота закрываются вовремя. На Радоницу и в родительские субботы кладбище открыто до последней литии.",
+      "el": "Οι πύλες κλείνουν στην ώρα τους. Τα Ψυχοσάββατα και την ημέρα της Ραδονίτσας το κοιμητήριο μένει ανοιχτό μέχρι το τελευταίο Τρισάγιο."
+    }
+  },
+  "orthodoxConnect": {
+    "enabled": true,
+    "organizationId": "st-example-cemetery",
+    "appLink": "orthodoxconnect://org/st-example-cemetery",
+    "webLink": "https://connect.example.org/org/st-example-cemetery",
+    "newsletter": true
+  },
+  "forms": {
+    "endpoint": ""
+  },
+  "payments": {
+    "provider": "demo",
+    "currency": "USD",
+    "publicKey": ""
+  },
+  "fundTotals": {
+    "provider": "none",
+    "endpoint": "/api/funds/{fundId}/totals"
+  },
+  "social": []
+}

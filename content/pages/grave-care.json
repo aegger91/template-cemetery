@@ -1,0 +1,80 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "grave-care",
+  "title": {
+    "en": "Grave care and upkeep",
+    "ru": "Уход за могилой",
+    "el": "Φροντίδα και συντήρηση τάφου"
+  },
+  "description": {
+    "en": "Ask the grounds team to clean, plant, tend a lampada or repair a marker at a family grave.",
+    "ru": "Попросите работников кладбища убрать могилу, посадить цветы, следить за лампадой или поправить крест.",
+    "el": "Ζητήστε από το προσωπικό να καθαρίσει, να φυτέψει, να φροντίζει το καντήλι ή να επισκευάσει το μνημείο ενός οικογενειακού τάφου."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "Ask the grounds team to tend a family grave. We can send a photograph when the work is done.",
+        "ru": "Попросите работников кладбища поухаживать за семейной могилой. По окончании мы можем прислать фотографию.",
+        "el": "Ζητήστε από την ομάδα του κοιμητηρίου να φροντίσει έναν οικογενειακό τάφο. Μπορούμε να σας στείλουμε φωτογραφία όταν τελειώσει η εργασία."
+      }
+    },
+    {
+      "type": "graveCareForm",
+      "enabled": true,
+      "id": "request",
+      "tasks": [
+        {
+          "id": "clean",
+          "label": {
+            "en": "Clean the marker and grave bed",
+            "ru": "Очистить надгробие и могилу",
+            "el": "Καθαρισμός μνημείου και παρτεριού"
+          }
+        },
+        {
+          "id": "flowers",
+          "label": {
+            "en": "Plant seasonal flowers",
+            "ru": "Посадить сезонные цветы",
+            "el": "Φύτεμα λουλουδιών της εποχής"
+          }
+        },
+        {
+          "id": "lampada",
+          "label": {
+            "en": "Keep a lampada filled and lit",
+            "ru": "Следить за лампадой",
+            "el": "Να γεμίζει και να ανάβει το καντήλι"
+          }
+        },
+        {
+          "id": "repair",
+          "label": {
+            "en": "Reset or repair a leaning cross",
+            "ru": "Выпрямить или починить крест",
+            "el": "Ίσιωμα ή επισκευή σταυρού που γέρνει"
+          }
+        },
+        {
+          "id": "inscription",
+          "label": {
+            "en": "Refresh a worn inscription",
+            "ru": "Обновить стёршуюся надпись",
+            "el": "Ανανέωση φθαρμένης επιγραφής"
+          }
+        },
+        {
+          "id": "winter",
+          "label": {
+            "en": "Prepare the grave for winter",
+            "ru": "Подготовить могилу к зиме",
+            "el": "Προετοιμασία του τάφου για τον χειμώνα"
+          }
+        }
+      ]
+    }
+  ]
+}

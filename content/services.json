@@ -1,0 +1,194 @@
+{
+  "$schema": "../schemas/services.schema.json",
+  "weekly": [
+    {
+      "id": "saturday-panikhida",
+      "weekday": "sat",
+      "time": "10:00",
+      "kind": "panikhida",
+      "pauseInBrightWeek": true,
+      "title": {
+        "en": "Panikhida for the departed",
+        "ru": "Панихида",
+        "el": "Μνημόσυνο"
+      },
+      "place": {
+        "en": "Cemetery chapel",
+        "ru": "Кладбищенская часовня",
+        "el": "Παρεκκλήσιο του κοιμητηρίου"
+      }
+    },
+    {
+      "id": "sunday-litiya",
+      "weekday": "sun",
+      "time": "14:00",
+      "kind": "litiya",
+      "pauseInBrightWeek": true,
+      "title": {
+        "en": "Litiyas at the graves",
+        "ru": "Литии на могилах",
+        "el": "Τρισάγια στους τάφους"
+      },
+      "place": {
+        "en": "Cemetery grounds",
+        "ru": "На кладбище",
+        "el": "Στο κοιμητήριο"
+      }
+    },
+    {
+      "id": "first-wednesday-akathist",
+      "weekday": "wed",
+      "weeksOfMonth": [
+        1
+      ],
+      "time": "18:00",
+      "kind": "akathist",
+      "title": {
+        "en": "Akathist for the departed",
+        "ru": "Акафист об упокоении усопших",
+        "el": "Ακάθιστος υπέρ των κεκοιμημένων"
+      },
+      "place": {
+        "en": "Cemetery chapel",
+        "ru": "Кладбищенская часовня",
+        "el": "Παρεκκλήσιο του κοιμητηρίου"
+      }
+    }
+  ],
+  "memorialDays": [
+    {
+      "id": "meatfare-saturday",
+      "rule": "pascha:-57",
+      "time": "09:00",
+      "kind": "memorial",
+      "title": {
+        "en": "Meatfare Memorial Saturday",
+        "ru": "Вселенская мясопустная родительская суббота",
+        "el": "Ψυχοσάββατο της Απόκρεω"
+      }
+    },
+    {
+      "id": "lent-saturday-2",
+      "rule": "pascha:-36",
+      "time": "09:00",
+      "kind": "memorial",
+      "title": {
+        "en": "Memorial Saturday, 2nd week of Great Lent",
+        "ru": "Родительская суббота 2-й седмицы Великого поста",
+        "el": "Ψυχοσάββατο, Β΄ εβδομάδα των Νηστειών"
+      }
+    },
+    {
+      "id": "lent-saturday-3",
+      "rule": "pascha:-29",
+      "time": "09:00",
+      "kind": "memorial",
+      "title": {
+        "en": "Memorial Saturday, 3rd week of Great Lent",
+        "ru": "Родительская суббота 3-й седмицы Великого поста",
+        "el": "Ψυχοσάββατο, Γ΄ εβδομάδα των Νηστειών"
+      }
+    },
+    {
+      "id": "lent-saturday-4",
+      "rule": "pascha:-22",
+      "time": "09:00",
+      "kind": "memorial",
+      "title": {
+        "en": "Memorial Saturday, 4th week of Great Lent",
+        "ru": "Родительская суббота 4-й седмицы Великого поста",
+        "el": "Ψυχοσάββατο, Δ΄ εβδομάδα των Νηστειών"
+      }
+    },
+    {
+      "id": "thomas-sunday",
+      "rule": "pascha:7",
+      "time": "13:00",
+      "kind": "blessing",
+      "title": {
+        "en": "Thomas Sunday: Paschal procession to the graves",
+        "ru": "Антипасха: пасхальный крестный ход по кладбищу",
+        "el": "Κυριακή του Θωμά: πασχαλινή λιτανεία στους τάφους"
+      }
+    },
+    {
+      "id": "radonitsa",
+      "rule": "pascha:9",
+      "time": "10:00",
+      "kind": "blessing",
+      "featured": true,
+      "title": {
+        "en": "Radonitsa: Paschal blessing of the graves",
+        "ru": "Радоница: пасхальное поминовение усопших",
+        "el": "Ραδονίτσα: πασχαλινή ευλογία των τάφων"
+      }
+    },
+    {
+      "id": "trinity-saturday",
+      "rule": "pascha:48",
+      "time": "09:00",
+      "kind": "memorial",
+      "title": {
+        "en": "Trinity Memorial Saturday",
+        "ru": "Троицкая родительская суббота",
+        "el": "Ψυχοσάββατο της Πεντηκοστής"
+      }
+    },
+    {
+      "id": "chapel-feast",
+      "rule": "church:08-15",
+      "time": "09:30",
+      "kind": "feast",
+      "title": {
+        "en": "Chapel feast: Dormition of the Theotokos",
+        "ru": "Престольный праздник часовни: Успение Пресвятой Богородицы",
+        "el": "Πανηγύρι του παρεκκλησίου: Κοίμηση της Θεοτόκου"
+      }
+    },
+    {
+      "id": "demetrius-saturday",
+      "rule": "saturdayBefore:10-26",
+      "time": "09:00",
+      "kind": "memorial",
+      "title": {
+        "en": "Demetrius Memorial Saturday",
+        "ru": "Димитриевская родительская суббота",
+        "el": "Ψυχοσάββατο του Αγίου Δημητρίου"
+      }
+    },
+    {
+      "id": "theophany-blessing",
+      "rule": "sundayAfter:01-06",
+      "time": "13:00",
+      "kind": "blessing",
+      "title": {
+        "en": "Blessing of the grounds with Theophany water",
+        "ru": "Освящение кладбища крещенской водой",
+        "el": "Αγιασμός του κοιμητηρίου με αγιασμό των Θεοφανείων"
+      }
+    }
+  ],
+  "cleanupDays": [
+    {
+      "id": "spring-cleanup",
+      "rule": "pascha:-15",
+      "time": "09:00",
+      "title": {
+        "en": "Spring cleanup before Holy Week",
+        "ru": "Весенний субботник перед Страстной седмицей",
+        "el": "Ανοιξιάτικος καθαρισμός πριν τη Μεγάλη Εβδομάδα"
+      }
+    },
+    {
+      "id": "autumn-cleanup",
+      "rule": "saturdayBefore:10-26",
+      "offsetDays": -7,
+      "time": "09:00",
+      "title": {
+        "en": "Autumn cleanup before Demetrius Saturday",
+        "ru": "Осенний субботник перед Димитриевской субботой",
+        "el": "Φθινοπωρινός καθαρισμός πριν το Ψυχοσάββατο του Αγίου Δημητρίου"
+      }
+    }
+  ]
+}

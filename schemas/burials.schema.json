@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectorthodox.example/schemas/burials.schema.json",
+  "title": "Burial records",
+  "description": "One file holds any number of records. Split large registers into several files in content/burials (for example by section); the build merges them and writes a compact search index plus one small file per record, so thousands of records load quickly.",
+  "type": "object",
+  "required": ["records"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "dataset": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "sample": { "type": "boolean", "description": "true for demo data." },
+        "note": { "type": "string" }
+      }
+    },
+    "records": { "type": "array", "items": { "$ref": "#/$defs/record" } }
+  },
+  "$defs": {
+    "partialDate": {
+      "type": "string",
+      "description": "YYYY, YYYY-MM or YYYY-MM-DD. Use what the register gives.",
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "record": {
+      "type": "object",
+      "required": ["id", "name", "section", "row", "plot"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Stable id used in the record page address." },
+        "sample": { "type": "boolean", "description": "Marks fictional demo records. Shown as a Sample badge." },
+        "notable": { "type": "boolean" },
+        "title": { "$ref": "common.schema.json#/$defs/localized", "description": "Clergy or monastic rank, such as Archpriest or Nun." },
+        "name": {
+          "type": "object",
+          "required": ["native"],
+          "properties": {
+            "script": { "enum": ["Cyrl", "Grek", "Latn", "Arab", "Geor"], "description": "Script of the native spelling." },
+            "native": { "type": "string", "description": "Name as written on the grave." },
+            "latin": { "type": "string", "description": "Latin transliteration." },
+            "variants": { "type": "array", "items": { "type": "string" }, "description": "Other spellings people may search for." }
+          }
+        },
+        "born": { "$ref": "#/$defs/partialDate" },
+        "reposed": { "$ref": "#/$defs/partialDate" },
+        "section": { "type": "string", "description": "Matches a section id in content/grounds.json." },
+        "row": { "type": "integer", "minimum": 1 },
+        "plot": { "type": "integer", "minimum": 1 },
+        "marker": { "enum": ["slavic-wood", "slavic-stone", "byzantine-stone"], "description": "Style of the placeholder illustration when there is no photo." },
+        "photo": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "common.schema.json#/$defs/image" }
+          ]
+        },
+        "summary": { "$ref": "common.schema.json#/$defs/localized" },
+        "bio": { "$ref": "common.schema.json#/$defs/localized" },
+        "clergy": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "$ref": "common.schema.json#/$defs/localized" },
+              "role": { "enum": ["funeral", "burial", "deacon"] }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

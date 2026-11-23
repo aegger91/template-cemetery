@@ -1,0 +1,157 @@
+{
+  "$schema": "../schemas/navigation.schema.json",
+  "header": [
+    {
+      "page": "find-a-grave"
+    },
+    {
+      "label": {
+        "en": "Services",
+        "ru": "Богослужения",
+        "el": "Ακολουθίες"
+      },
+      "children": [
+        {
+          "page": "services"
+        },
+        {
+          "page": "services",
+          "anchor": "request",
+          "label": {
+            "en": "Request a Panikhida or Litiya",
+            "ru": "Заказать панихиду или литию",
+            "el": "Αίτημα για Μνημόσυνο ή Τρισάγιο"
+          }
+        },
+        {
+          "page": "services/commemoration"
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "Plots and care",
+        "ru": "Участки и уход",
+        "el": "Τάφοι και φροντίδα"
+      },
+      "children": [
+        {
+          "page": "plots"
+        },
+        {
+          "page": "grave-care"
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "About",
+        "ru": "О кладбище",
+        "el": "Σχετικά"
+      },
+      "children": [
+        {
+          "page": "history"
+        },
+        {
+          "page": "history",
+          "anchor": "notable",
+          "label": {
+            "en": "Notable burials",
+            "ru": "Памятные захоронения",
+            "el": "Αξιομνημόνευτες ταφές"
+          }
+        },
+        {
+          "page": "history",
+          "anchor": "gallery",
+          "label": {
+            "en": "Photo gallery",
+            "ru": "Фотогалерея",
+            "el": "Φωτογραφίες"
+          }
+        },
+        {
+          "page": "volunteer"
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "Visit",
+        "ru": "Посещение",
+        "el": "Επίσκεψη"
+      },
+      "children": [
+        {
+          "page": "visit"
+        },
+        {
+          "page": "contact"
+        }
+      ]
+    }
+  ],
+  "donate": {
+    "page": "donate"
+  },
+  "footer": [
+    {
+      "label": {
+        "en": "Visit",
+        "ru": "Посещение",
+        "el": "Επίσκεψη"
+      },
+      "links": [
+        {
+          "page": "visit"
+        },
+        {
+          "page": "find-a-grave"
+        },
+        {
+          "page": "contact"
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "Prayer and services",
+        "ru": "Молитва и службы",
+        "el": "Προσευχή και ακολουθίες"
+      },
+      "links": [
+        {
+          "page": "services"
+        },
+        {
+          "page": "services/commemoration"
+        },
+        {
+          "page": "volunteer"
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "Families",
+        "ru": "Семьям",
+        "el": "Για τις οικογένειες"
+      },
+      "links": [
+        {
+          "page": "plots"
+        },
+        {
+          "page": "grave-care"
+        },
+        {
+          "page": "donate"
+        },
+        {
+          "page": "image-credits"
+        }
+      ]
+    }
+  ]
+}

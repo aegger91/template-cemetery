@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "image-credits",
+  "title": { "en": "Image credits", "ru": "Источники изображений", "el": "Πηγές εικόνων" },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "Every photograph on this sample site is in the public domain and comes from Wikimedia Commons. Grave photographs are drawn placeholders.",
+        "ru": "Все фотографии на этом образце сайта являются общественным достоянием и взяты из Викисклада. Фотографии могил заменены рисунками.",
+        "el": "Όλες οι φωτογραφίες αυτού του δειγματικού ιστότοπου είναι κοινό κτήμα και προέρχονται από το Wikimedia Commons. Οι φωτογραφίες τάφων είναι σχεδιασμένες εικόνες κράτησης θέσης."
+      }
+    },
+    { "type": "imageCredits", "enabled": true }
+  ]
+}

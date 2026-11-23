@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "visit",
+  "title": {
+    "en": "Visiting the cemetery",
+    "ru": "Посещение кладбища",
+    "el": "Επίσκεψη στο κοιμητήριο"
+  },
+  "description": {
+    "en": "Visiting hours, visitor information and a map of the grounds.",
+    "ru": "Часы посещения, сведения для посетителей и план кладбища.",
+    "el": "Ώρες επίσκεψης, πληροφορίες για επισκέπτες και χάρτης του χώρου."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true
+    },
+    {
+      "type": "visitingHours",
+      "enabled": true,
+      "id": "hours",
+      "heading": {
+        "en": "Visiting hours",
+        "ru": "Часы посещения",
+        "el": "Ώρες επισκέψεων"
+      }
+    },
+    {
+      "type": "visitingInfo",
+      "enabled": true,
+      "id": "info",
+      "heading": {
+        "en": "Visiting information",
+        "ru": "Для посетителей",
+        "el": "Πληροφορίες για επισκέπτες"
+      },
+      "text": {
+        "en": "Add short notes for visitors here, such as parking, access or seasonal closures.",
+        "ru": "Здесь можно добавить краткие сведения для посетителей: парковка, доступ, сезонные ограничения.",
+        "el": "Προσθέστε εδώ σύντομες σημειώσεις για τους επισκέπτες, όπως στάθμευση, πρόσβαση ή εποχικό κλείσιμο."
+      }
+    },
+    {
+      "type": "sectionMap",
+      "enabled": true,
+      "id": "map",
+      "heading": {
+        "en": "Find your way",
+        "ru": "Схема кладбища",
+        "el": "Βρείτε τον δρόμο σας"
+      },
+      "intro": {
+        "en": "The chapel is at the top of the main path, straight ahead from the gate.",
+        "ru": "Часовня стоит в конце главной дорожки, прямо от ворот.",
+        "el": "Το παρεκκλήσι βρίσκεται στην κορυφή του κεντρικού μονοπατιού, ευθεία από την πύλη."
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectorthodox.example/schemas/ui.schema.json",
+  "title": "Interface text for one language",
+  "description": "Buttons, labels and messages. Any key missing here falls back to the default language file.",
+  "type": "object",
+  "properties": { "$schema": { "type": "string" } },
+  "additionalProperties": {
+    "oneOf": [
+      { "type": "string" },
+      { "type": "object", "additionalProperties": { "type": "string" } }
+    ]
+  }
+}
