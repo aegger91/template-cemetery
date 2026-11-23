@@ -1,0 +1,177 @@
+{
+  "$schema": "../schemas/announcements.schema.json",
+  "announcements": [
+    {
+      "id": "radonitsa",
+      "rule": "pascha:9",
+      "time": "09:00",
+      "kind": "memorial-day",
+      "featured": true,
+      "title": {
+        "en": "Radonitsa: blessing of the graves",
+        "ru": "Радоница: освящение могил",
+        "el": "Ραντονίτσα: αγιασμός των τάφων"
+      },
+      "summary": {
+        "en": "Clergy walk the grounds and bless the graves. The chapel opens early.",
+        "ru": "Духовенство обходит кладбище и освящает могилы. Часовня открыта с раннего утра.",
+        "el": "Ο κλήρος περνά από τους τάφους για αγιασμό. Το παρεκκλήσι ανοίγει νωρίς."
+      },
+      "body": {
+        "en": "On Radonitsa the clergy bless graves across the cemetery. Families may wait at their plot. Bring names for commemoration to the chapel desk.",
+        "ru": "В Радоницу духовенство освящает могилы по всему кладбищу. Семьи могут ждать у своего участка. Имена для поминовения подайте в часовне.",
+        "el": "Τη Ραντονίτσα ο κλήρος αγιάζει τους τάφους σε όλο το κοιμητήριο. Οι οικογένειες μπορούν να περιμένουν στον τάφο τους. Φέρτε ονόματα για μνημόνευση στο παρεκκλήσι."
+      },
+      "location": {
+        "en": "Cemetery grounds and chapel",
+        "ru": "Кладбище и часовня",
+        "el": "Κοιμητήριο και παρεκκλήσι"
+      }
+    },
+    {
+      "id": "meatfare-saturday",
+      "rule": "pascha:-57",
+      "time": "10:00",
+      "kind": "memorial-day",
+      "title": {
+        "en": "Meatfare Memorial Saturday",
+        "ru": "Вселенская родительская суббота",
+        "el": "Ψυχοσάββατο της Απόκρεω"
+      },
+      "summary": {
+        "en": "Names for the departed may be left at the chapel that morning.",
+        "ru": "Имена усопших можно подать в часовне утром.",
+        "el": "Ονόματα κεκοιμημένων μπορείτε να αφήσετε το πρωί στο παρεκκλήσι."
+      },
+      "body": {
+        "en": "A short memorial gathering is held at the chapel. Bring a list of baptismal names if you wish them commemorated.",
+        "ru": "В часовне состоится краткое поминовение. При желании принесите список крестильных имён.",
+        "el": "Στο παρεκκλήσι γίνεται σύντομη μνημόνευση. Φέρτε βαπτιστικά ονόματα αν θέλετε να μνημονευθούν."
+      },
+      "location": {
+        "en": "Cemetery chapel",
+        "ru": "Кладбищенская часовня",
+        "el": "Παρεκκλήσι κοιμητηρίου"
+      }
+    },
+    {
+      "id": "spring-cleanup",
+      "rule": "pascha:-15",
+      "time": "09:00",
+      "kind": "cleanup",
+      "title": {
+        "en": "Spring cleanup day",
+        "ru": "Весенний день уборки",
+        "el": "Ανοιξιάτικη ημέρα καθαρισμού"
+      },
+      "summary": {
+        "en": "Volunteers rake paths and tend markers before Holy Week.",
+        "ru": "Добровольцы чистят дорожки и приводят в порядок кресты перед Страстной седмицей.",
+        "el": "Εθελοντές καθαρίζουν μονοπάτια και σταυρούς πριν τη Μεγάλη Εβδομάδα."
+      },
+      "body": {
+        "en": "Meet at the chapel. Bring gloves if you have them. Sign up through OrthodoxConnect when it is enabled.",
+        "ru": "Сбор у часовни. Принесите перчатки, если есть. Запись через OrthodoxConnect, если он подключён.",
+        "el": "Συνάντηση στο παρεκκλήσι. Φέρτε γάντια αν έχετε. Εγγραφή μέσω OrthodoxConnect όταν είναι ενεργό."
+      },
+      "location": {
+        "en": "Meet at the chapel",
+        "ru": "Сбор у часовни",
+        "el": "Συνάντηση στο παρεκκλήσι"
+      }
+    },
+    {
+      "id": "autumn-cleanup",
+      "rule": "saturdayBefore:10-26",
+      "offsetDays": -7,
+      "time": "09:00",
+      "kind": "cleanup",
+      "title": {
+        "en": "Autumn cleanup day",
+        "ru": "Осенний день уборки",
+        "el": "Φθινοπωρινή ημέρα καθαρισμού"
+      },
+      "summary": {
+        "en": "Leaf clearing and light marker care before Demetrius Saturday.",
+        "ru": "Уборка листьев и лёгкий уход за крестами перед Димитриевской субботой.",
+        "el": "Καθαρισμός φύλλων και ελαφρά φροντίδα σταυρών πριν το Ψυχοσάββατο του Δημητρίου."
+      },
+      "body": {
+        "en": "Meet at the chapel. The grounds team will set out tools. Families are welcome for an hour or the whole morning.",
+        "ru": "Сбор у часовни. Инструменты подготовит персонал. Можно прийти на час или на всё утро.",
+        "el": "Συνάντηση στο παρεκκλήσι. Το προσωπικό θα έχει εργαλεία. Καλωσορίζουμε οικογένειες για μία ώρα ή όλο το πρωί."
+      },
+      "location": {
+        "en": "Meet at the chapel",
+        "ru": "Сбор у часовни",
+        "el": "Συνάντηση στο παρεκκλήσι"
+      }
+    },
+    {
+      "id": "winter-hours",
+      "date": "2026-11-01",
+      "kind": "hours",
+      "title": {
+        "en": "Winter visiting hours begin",
+        "ru": "Начинаются зимние часы посещения",
+        "el": "Αρχίζουν οι χειμερινές ώρες επίσκεψης"
+      },
+      "summary": {
+        "en": "Gates close earlier from 1 November through 31 March.",
+        "ru": "С 1 ноября по 31 марта ворота закрываются раньше.",
+        "el": "Από 1 Νοεμβρίου έως 31 Μαρτίου οι πύλες κλείνουν νωρίτερα."
+      },
+      "body": {
+        "en": "Winter hours are listed on the Visit page. On Memorial Saturdays the grounds may stay open later for blessings.",
+        "ru": "Зимние часы указаны на странице «Посещение». В родительские субботы территорию могут оставить открытой дольше.",
+        "el": "Οι χειμερινές ώρες αναφέρονται στη σελίδα Επίσκεψη. Τα Ψυχοσάββατα ο χώρος μπορεί να μείνει ανοιχτός αργότερα."
+      }
+    },
+    {
+      "id": "office-closed-nativity",
+      "date": "2026-12-25",
+      "kind": "closure",
+      "title": {
+        "en": "Office closed for Nativity",
+        "ru": "Контора закрыта на Рождество",
+        "el": "Το γραφείο κλειστό για τα Χριστούγεννα"
+      },
+      "summary": {
+        "en": "The office is closed on 25 December. The grounds keep winter visiting hours.",
+        "ru": "25 декабря контора закрыта. Территория открыта по зимним часам.",
+        "el": "Στις 25 Δεκεμβρίου το γραφείο είναι κλειστό. Ο χώρος ακολουθεί τις χειμερινές ώρες."
+      },
+      "body": {
+        "en": "For urgent burial arrangements call the number on the Contact page. Regular office hours resume the next working day.",
+        "ru": "По срочным вопросам погребения звоните по телефону на странице «Контакты». Обычные часы конторы — со следующего рабочего дня.",
+        "el": "Για επείγουσες ταφές καλέστε τον αριθμό στη σελίδα Επικοινωνία. Το γραφείο ανοίγει την επόμενη εργάσιμη."
+      }
+    },
+    {
+      "id": "demetrius-saturday",
+      "rule": "saturdayBefore:10-26",
+      "time": "10:00",
+      "kind": "memorial-day",
+      "title": {
+        "en": "Demetrius Memorial Saturday",
+        "ru": "Димитриевская родительская суббота",
+        "el": "Ψυχοσάββατο του Αγίου Δημητρίου"
+      },
+      "summary": {
+        "en": "Memorial day at the chapel; graves may be visited through the afternoon.",
+        "ru": "День поминовения в часовне; могилы можно посещать до вечера.",
+        "el": "Ημέρα μνήμης στο παρεκκλήσι· οι τάφοι είναι ανοιχτοί έως το απόγευμα."
+      },
+      "body": {
+        "en": "Leave names at the chapel desk in the morning. The grounds team will keep paths clear for visitors.",
+        "ru": "Имена подайте утром в часовне. Персонал поддержит дорожки в порядке для посетителей.",
+        "el": "Αφήστε ονόματα το πρωί στο παρεκκλήσι. Το προσωπικό θα κρατήσει καθαρά τα μονοπάτια."
+      },
+      "location": {
+        "en": "Cemetery chapel",
+        "ru": "Кладбищенская часовня",
+        "el": "Παρεκκλήσι κοιμητηρίου"
+      }
+    }
+  ]
+}

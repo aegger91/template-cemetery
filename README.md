@@ -25,12 +25,13 @@ Demo languages: English, Russian, Greek (`content/site.json`).
 
 ## Sections worth knowing
 
+- **Announcements** dated notices (memorial days, cleanup, hours, closures) with add-to-calendar
 - **Find a grave** searches a static register (`public/data/burials/`, built from `content/burials/`).
 - **Donate** is a fund picker. Raised totals are optional (`fundTotals` section, off by default) and only appear when a payment totals provider is connected.
 - **Visiting info** is a short placeholder block clients fill in themselves (`enabled: false` to hide it).
 - Forms post to `forms.endpoint` in `site.json`, or stay in demo mode with no endpoint.
 
-This template does not ship catechesis, funeral how-tos or etiquette guides. Clients add that content later if they want it.
+This template does not ship catechesis, funeral how-tos or etiquette guides. Clients add that content later if they want it. Donation and commemoration amounts start at zero with no minimum.
 
 ## Images
 

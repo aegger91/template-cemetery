@@ -99,9 +99,10 @@
     font-family: var(--font-heading);
     color: var(--tk-color-green);
     font-weight: 500;
-    line-height: 1.15;
+    line-height: 1.25;
     text-wrap: balance;
-    overflow-wrap: anywhere;
+    overflow: visible;
+    overflow-wrap: break-word;
     hyphens: auto;
   }
   p {
@@ -130,10 +131,11 @@
   }
   .eyebrow {
     font-size: 0.78rem;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--tk-color-gold);
     font-weight: 600;
+    line-height: 1.35;
   }
   .prose-quiet p + p {
     margin-top: 1rem;

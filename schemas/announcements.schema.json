@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectorthodox.example/schemas/announcements.schema.json",
+  "title": "Announcements",
+  "description": "Dated cemetery notices: memorial days, cleanup days, hour changes, office closures. Use a fixed date or a church calendar rule.",
+  "type": "object",
+  "required": ["announcements"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "announcements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "summary", "body", "kind"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "rule": { "type": "string", "description": "Church calendar rule, for example pascha:9 or saturdayBefore:10-26." },
+          "offsetDays": { "type": "integer" },
+          "time": { "type": "string", "pattern": "^\\d{2}:\\d{2}$" },
+          "endTime": { "type": "string", "pattern": "^\\d{2}:\\d{2}$" },
+          "kind": { "type": "string", "enum": ["memorial-day", "cleanup", "hours", "closure", "notice"] },
+          "featured": { "type": "boolean" },
+          "title": { "$ref": "common.schema.json#/$defs/localized" },
+          "summary": { "$ref": "common.schema.json#/$defs/localized" },
+          "body": { "$ref": "common.schema.json#/$defs/localized" },
+          "location": { "$ref": "common.schema.json#/$defs/localized" }
+        },
+        "additionalProperties": false,
+        "anyOf": [{ "required": ["date"] }, { "required": ["rule"] }]
+      }
+    }
+  },
+  "additionalProperties": false
+}

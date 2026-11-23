@@ -4,6 +4,7 @@ import path from "node:path";
 import { mergeDictionaries } from "./i18n";
 import type {
   BurialRecord,
+  Announcement,
   Fund,
   Grounds,
   ImageSource,
@@ -24,6 +25,7 @@ export const getSite = () => readJson<SiteConfig>("site.json");
 export const getNavigation = () => readJson<Navigation>("navigation.json");
 export const getGrounds = () => readJson<Grounds>("grounds.json");
 export const getServices = () => readJson<Services>("services.json");
+export const getAnnouncements = () => readJson<{ announcements: Announcement[] }>("announcements.json").announcements;
 export const getFunds = () => readJson<{ funds: Fund[] }>("funds.json").funds;
 export const getSources = () => readJson<{ images: ImageSource[] }>("sources.json").images;
 export const getTokens = () => readJson<Record<string, Record<string, string>>>("tokens.json");

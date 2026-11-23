@@ -30,7 +30,7 @@ export function CommemorationForm({
   const f = useFormatters();
   const provider = getPaymentProvider(site.payments?.provider);
   const [names, setNames] = useState<string[]>(["", "", ""]);
-  const [offering, setOffering] = useState(amounts[1] ?? amounts[0] ?? 0);
+  const [offering, setOffering] = useState(0);
   const [light, setLight] = useState("none");
   const [contact, setContact] = useState(emptyContact);
   const [errors, setErrors] = useState<Errors>({});
@@ -59,7 +59,7 @@ export function CommemorationForm({
     const filled = names.map((n) => n.trim()).filter(Boolean);
     const errs: Errors = { ...validateContact(contact, t) };
     if (!filled.length) errs.names = t("forms.fieldRequired");
-    if (provider && offering < 1 && lightPrice === 0) errs.offering = t("donate.amountInvalid");
+    if (offering < 0 || Number.isNaN(offering)) errs.offering = t("donate.amountInvalid");
     setErrors(errs);
     if (Object.values(errs).some(Boolean)) return;
     setStatus("sending");

@@ -1,7 +1,7 @@
 import { Hero } from "./hero";
 import { PageHeader } from "./page-header";
 import { QuickLinks } from "./quick-links";
-import { UpcomingServicesSection } from "./upcoming-services";
+import { UpcomingAnnouncementsSection } from "./upcoming-announcements";
 import { NotableBurials } from "./notable-burials";
 import { HistoryStory } from "./history-story";
 import { Timeline } from "./timeline";
@@ -10,7 +10,8 @@ import { GallerySection } from "./gallery";
 import { GraveSearchSection } from "./grave-search";
 import { GraveRecordSection } from "./grave-record";
 import { SectionMapSection } from "./section-map-section";
-import { ServiceScheduleSection } from "./service-schedule";
+import { AnnouncementsListSection } from "./announcements-list-section";
+import { AnnouncementDetailSection } from "./announcement-detail-section";
 import { ServiceRequestSection } from "./service-request";
 import { CommemorationSection } from "./commemoration";
 import { PlotsAvailability } from "./plots-availability";
@@ -39,7 +40,7 @@ const REGISTRY: Record<string, (p: SectionProps) => React.ReactNode> = {
   hero: Hero,
   pageHeader: PageHeader,
   quickLinks: QuickLinks,
-  upcomingServices: UpcomingServicesSection,
+  upcomingAnnouncements: UpcomingAnnouncementsSection,
   notableBurials: NotableBurials,
   historyStory: HistoryStory,
   timeline: Timeline,
@@ -48,7 +49,8 @@ const REGISTRY: Record<string, (p: SectionProps) => React.ReactNode> = {
   graveSearch: GraveSearchSection,
   graveRecord: GraveRecordSection,
   sectionMap: SectionMapSection,
-  serviceSchedule: ServiceScheduleSection,
+  announcementsList: AnnouncementsListSection,
+  announcementDetail: AnnouncementDetailSection,
   serviceRequestForm: ServiceRequestSection,
   commemorationForm: CommemorationSection,
   plotsAvailability: PlotsAvailability,

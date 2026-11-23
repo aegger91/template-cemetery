@@ -6,6 +6,7 @@ import { formatMoney } from "@/lib/payments";
 import { cn } from "@/lib/utils";
 import { useFormatters, useSite } from "../site-context";
 
+/** Suggested chips plus a free Other amount field. Starts empty / $0 with no minimum. */
 export function AmountPicker({
   id,
   amounts,
@@ -25,14 +26,15 @@ export function AmountPicker({
 }) {
   const { lang } = useSite();
   const f = useFormatters();
-  const [other, setOther] = useState(amounts.includes(value) ? "" : String(value || ""));
-  const otherActive = !amounts.includes(value) || other !== "";
+  const [other, setOther] = useState("");
+  const chipActive = other === "" && amounts.includes(value) && value > 0;
+
   return (
     <fieldset className="grid gap-3">
       <legend className="mb-2 text-[0.95rem] font-semibold text-ink">{legend}</legend>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         {amounts.map((a) => {
-          const active = value === a && other === "";
+          const active = chipActive && value === a;
           return (
             <button
               key={a}
@@ -60,14 +62,19 @@ export function AmountPicker({
           id={`${id}-other`}
           inputMode="decimal"
           value={other}
-          placeholder={formatMoney(0, f.currency, lang).replace(/0/, "")}
+          placeholder={formatMoney(0, f.currency, lang)}
           onChange={(e) => {
             const raw = e.target.value.replace(/[^\d.,]/g, "").replace(",", ".");
             setOther(raw);
-            onChange(raw ? Number(raw) || 0 : amounts[0] ?? 0);
+            if (!raw) {
+              onChange(0);
+              return;
+            }
+            const n = Number(raw);
+            onChange(Number.isFinite(n) ? n : 0);
           }}
           aria-invalid={!!error || undefined}
-          className={cn("h-11 max-w-48 bg-paper text-base tabular-nums", otherActive && other && "border-green")}
+          className={cn("h-11 max-w-48 bg-paper text-base tabular-nums", other !== "" && "border-green")}
           dir="ltr"
         />
         {error && (

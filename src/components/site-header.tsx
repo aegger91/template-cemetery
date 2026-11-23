@@ -9,21 +9,23 @@ export function SiteHeader({ lang }: { lang: string }) {
       ? { label: L(item.label), children: item.children.map(resolveLink) }
       : { ...resolveLink(item) },
   );
-  const logoProps = {
-    style: site.logo.style,
-    image: site.logo.image,
-    sealTop: L(site.logo.sealTopText ?? site.name),
-    sealBottom: L(site.logo.sealBottomText),
-    lang,
-  };
   return (
     <HeaderBar
       items={items}
       donate={nav.donate ? resolveLink(nav.donate) : undefined}
       homeHref={href("")}
       siteName={L(site.name)}
-      logo={<Logo {...logoProps} name={L(site.name)} tagline={L(site.tagline)} />}
-      logoCompact={<Logo {...logoProps} name={L(site.shortName ?? site.name)} compact />}
+      logo={
+        <Logo
+          style={site.logo.style}
+          image={site.logo.image}
+          sealTop={L(site.logo.sealTopText ?? site.name)}
+          sealBottom={L(site.logo.sealBottomText)}
+          lang={lang}
+          name={L(site.shortName ?? site.name)}
+          compact
+        />
+      }
     />
   );
 }

@@ -26,7 +26,7 @@ export function DonateForm({ funds, amounts }: { funds: FundOption[]; amounts: n
   const preset = useQueryParam("fund");
   const [fundChoice, setFund] = useState<string | null>(null);
   const fund = fundChoice ?? (preset && funds.some((x) => x.id === preset) ? preset : (funds[0]?.id ?? ""));
-  const [amount, setAmount] = useState(amounts[1] ?? amounts[0] ?? 0);
+  const [amount, setAmount] = useState(0);
   const [frequency, setFrequency] = useState<"once" | "monthly">("once");
   const [memory, setMemory] = useState("");
   const [name, setName] = useState("");
@@ -58,24 +58,29 @@ export function DonateForm({ funds, amounts }: { funds: FundOption[]; amounts: n
     e.preventDefault();
     if (!provider) return;
     const errs: Errors = {};
-    if (!(amount >= 1)) errs.amount = t("donate.amountInvalid");
+    if (amount < 0 || Number.isNaN(amount)) errs.amount = t("donate.amountInvalid");
     if (!name.trim()) errs.name = t("forms.fieldRequired");
     if (!isEmail(email)) errs.email = t("forms.emailInvalid");
     setErrors(errs);
     if (Object.values(errs).some(Boolean)) return;
     setStatus("processing");
     try {
-      const r = await provider.pay({
-        fundId: fund,
-        amount,
-        currency: f.currency,
-        frequency,
-        donor: { name, email },
-        inMemoryOf: memory || undefined,
-        purpose: "donation",
-      });
-      setDemo(r.demo);
-      setStatus(r.status === "failed" ? "failed" : "done");
+      if (amount > 0) {
+        const r = await provider.pay({
+          fundId: fund,
+          amount,
+          currency: f.currency,
+          frequency,
+          donor: { name, email },
+          inMemoryOf: memory || undefined,
+          purpose: "donation",
+        });
+        setDemo(r.demo);
+        setStatus(r.status === "failed" ? "failed" : "done");
+      } else {
+        setDemo(provider.id === "demo");
+        setStatus("done");
+      }
     } catch {
       setStatus("failed");
     }
@@ -168,7 +173,7 @@ export function DonateForm({ funds, amounts }: { funds: FundOption[]; amounts: n
                 </p>
               )}
               <Button type="submit" size="lg" disabled={status === "processing"} className="h-12 bg-gold text-base text-ink hover:bg-gold-soft">
-                {status === "processing" ? t("donate.processing") : t("donate.submit", { amount: money })}
+                {status === "processing" ? t("donate.processing") : amount > 0 ? t("donate.submit", { amount: money }) : t("forms.send")}
               </Button>
               <p className="text-sm text-slate">{provider.id === "demo" ? t("donate.demoPayment") : t("donate.secure")}</p>
             </div>

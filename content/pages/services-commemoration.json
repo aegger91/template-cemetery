@@ -2,7 +2,7 @@
   "$schema": "../../schemas/page.schema.json",
   "slug": "services/commemoration",
   "title": {
-    "en": "Commemoration notes",
+    "en": "Commemoration names",
     "ru": "Записки об упокоении",
     "el": "Ονόματα για μνημόνευση"
   },

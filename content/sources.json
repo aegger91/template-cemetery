@@ -2,6 +2,16 @@
   "$schema": "../schemas/sources.schema.json",
   "images": [
     {
+      "id": "orthodox-cemetery-radom",
+      "file": "/images/pd/orthodox-cemetery-radom.webp",
+      "title": "Orthodox cemetery in Radom",
+      "author": "Radosław Botev",
+      "date": "2025",
+      "license": "Creative Commons Attribution 3.0 Poland (CC BY 3.0 PL)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orthodox_cemetery_in_Radom_(4).jpg",
+      "changes": "Cropped and converted to WebP for the home hero."
+    },
+    {
       "id": "belozersk-chapel-field",
       "file": "/images/pd/belozersk-chapel-field.webp",
       "title": "Chapel on the site where the city of Belozersk was founded in ancient times (near the village of Krokhino)",

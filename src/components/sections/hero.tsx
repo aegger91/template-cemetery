@@ -1,6 +1,6 @@
 import { HeroPanel } from "./hero-panel";
 import { DisplayPhrase } from "../display-phrase";
-import { getServices, getSources } from "@/lib/content";
+import { getAnnouncements, getSources } from "@/lib/content";
 import { serverI18n } from "@/lib/server-i18n";
 import type { ImageRef } from "@/lib/types";
 import type { SectionProps } from "./section-renderer";
@@ -40,7 +40,7 @@ export function Hero({ section, lang }: SectionProps) {
         )}
       </div>
       <div className="container-site relative z-10 -mt-28 lg:-mt-32">
-        <HeroPanel services={getServices()} searchAction={href("find-a-grave")} directionsUrl={site.contact.directionsUrl} address={L(site.contact.address)} schedule={href("services", "schedule")} />
+        <HeroPanel announcements={getAnnouncements()} searchAction={href("find-a-grave")} directionsUrl={site.contact.directionsUrl} address={L(site.contact.address)} announcementsHref={href("announcements")} />
       </div>
     </section>
   );

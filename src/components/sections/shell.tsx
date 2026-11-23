@@ -34,11 +34,11 @@ export function SectionShell({
     >
       <div className="container-site">
         {(heading || intro) && (
-          <header className={cn("mb-8 max-w-3xl sm:mb-10", center && "mx-auto text-center")}>
+          <div className={cn("mb-8 max-w-3xl sm:mb-10", center && "mx-auto text-center")}>
             {eyebrow && <p className="eyebrow mb-2">{eyebrow}</p>}
             {heading && <H className="text-3xl sm:text-[2.6rem]">{heading}</H>}
             {intro && <p className="mt-3 text-lg text-slate">{intro}</p>}
-          </header>
+          </div>
         )}
         {children}
       </div>

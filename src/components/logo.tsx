@@ -77,8 +77,8 @@ function Kiot({ image, className }: { image?: string; className?: string }) {
 
 export function Logo({ style, image, name, tagline, sealTop, sealBottom, lang, className, compact }: LogoProps) {
   const text = (
-    <span className="flex min-w-0 flex-col leading-tight">
-      <span className={cn("font-heading font-semibold text-green text-balance", compact ? "text-[1.02rem]" : "text-[1.15rem] sm:text-[1.3rem]")}>
+    <span className="flex min-w-0 flex-col leading-snug">
+      <span className={cn("font-heading font-semibold text-green leading-snug text-balance", compact ? "text-[1.02rem]" : "text-[1.15rem] sm:text-[1.3rem]")}>
         {name}
       </span>
       {tagline && !compact && <span className="hidden text-xs tracking-wide text-slate 2xl:block">{tagline}</span>}

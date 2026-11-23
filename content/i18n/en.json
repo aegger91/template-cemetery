@@ -56,9 +56,8 @@
     "searchLabel": "Find a grave",
     "searchPlaceholder": "Name in any spelling",
     "searchButton": "Search",
-    "nextService": "Next memorial service",
-    "seeSchedule": "Full schedule",
-    "everyWeek": "Every week"
+    "nextAnnouncement": "Next announcement",
+    "seeAnnouncements": "All announcements"
   },
   "search": {
     "name": "Name",
@@ -99,7 +98,7 @@
     "photoPlaceholder": "Drawn placeholder. No photograph on file.",
     "locate": "Locate on the map",
     "requestPanikhida": "Request a Panikhida at this grave",
-    "sendNote": "Send names for commemoration",
+    "sendNote": "Send commemoration names",
     "requestCare": "Request care for this grave",
     "backToSearch": "Back to search",
     "missing": "No record was found at this address.",
@@ -179,7 +178,7 @@
     "nameN": "Name {n}",
     "addName": "Add a name",
     "removeName": "Remove name {n}",
-    "maxNames": "Ten names per note.",
+    "maxNames": "Ten names.",
     "offering": "Offering",
     "otherAmount": "Other amount",
     "light": "Light for the departed",
@@ -189,8 +188,8 @@
     "lampada": "Lampada for 40 days ({price})",
     "lampadaHelp": "Kept lit in the chapel for forty days.",
     "total": "Total",
-    "submit": "Send note and give {amount}",
-    "sentTitle": "Your note has been received.",
+    "submit": "Send names and give {amount}",
+    "sentTitle": "Your names have been received.",
     "sentText": "The names will be read at the next Panikhida and Divine Liturgy."
   },
   "plots": {
@@ -235,7 +234,7 @@
     "thanksText": "A receipt will be sent to your email.",
     "demoPayment": "Sample site: no payment provider is connected, so no card was charged.",
     "secure": "Payments are handled by the cemetery's payment provider. Card details never touch this website.",
-    "amountInvalid": "Please enter an amount of at least 1.",
+    "amountInvalid": "Please enter a valid amount.",
     "notConnected": "Online giving is not set up yet. Please call the office to give.",
     "raised": "{amount} raised",
     "donors": "{count} donors",
@@ -279,5 +278,18 @@
     "license": "License",
     "source": "Source",
     "changes": "Changes"
+  },
+  "announcements": {
+    "all": "All announcements",
+    "empty": "No upcoming announcements right now.",
+    "addToCalendar": "Add to calendar",
+    "back": "Back",
+    "missing": "Announcement not found",
+    "missingHelp": "It may have been removed. See the full list instead.",
+    "kind_memorial-day": "Memorial day",
+    "kind_cleanup": "Cleanup day",
+    "kind_hours": "Visiting hours",
+    "kind_closure": "Office notice",
+    "kind_notice": "Notice"
   }
 }

@@ -5,26 +5,35 @@
       "page": "find-a-grave"
     },
     {
+      "page": "announcements",
       "label": {
-        "en": "Services",
-        "ru": "Богослужения",
-        "el": "Ακολουθίες"
+        "en": "Announcements",
+        "ru": "Объявления",
+        "el": "Ανακοινώσεις"
+      }
+    },
+    {
+      "label": {
+        "en": "Prayer",
+        "ru": "Молитва",
+        "el": "Προσευχή"
       },
       "children": [
         {
-          "page": "services"
-        },
-        {
           "page": "services",
-          "anchor": "request",
           "label": {
-            "en": "Request a Panikhida or Litiya",
-            "ru": "Заказать панихиду или литию",
-            "el": "Αίτημα για Μνημόσυνο ή Τρισάγιο"
+            "en": "Request at a grave",
+            "ru": "Заказать у могилы",
+            "el": "Αίτημα στον τάφο"
           }
         },
         {
-          "page": "services/commemoration"
+          "page": "services/commemoration",
+          "label": {
+            "en": "Commemoration names",
+            "ru": "Записки об упокоении",
+            "el": "Ονόματα για μνημόνευση"
+          }
         }
       ]
     },
@@ -116,16 +125,34 @@
     },
     {
       "label": {
-        "en": "Prayer and services",
-        "ru": "Молитва и службы",
-        "el": "Προσευχή και ακολουθίες"
+        "en": "Prayer",
+        "ru": "Молитва",
+        "el": "Προσευχή"
       },
       "links": [
         {
-          "page": "services"
+          "page": "announcements",
+          "label": {
+            "en": "Announcements",
+            "ru": "Объявления",
+            "el": "Ανακοινώσεις"
+          }
         },
         {
-          "page": "services/commemoration"
+          "page": "services",
+          "label": {
+            "en": "Request at a grave",
+            "ru": "Заказать у могилы",
+            "el": "Αίτημα στον τάφο"
+          }
+        },
+        {
+          "page": "services/commemoration",
+          "label": {
+            "en": "Commemoration names",
+            "ru": "Записки об упокоении",
+            "el": "Ονόματα για μνημόνευση"
+          }
         },
         {
           "page": "volunteer"

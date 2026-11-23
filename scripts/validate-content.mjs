@@ -21,6 +21,7 @@ const jobs = [
   ["content/grounds.json", "grounds.schema.json"],
   ["content/services.json", "services.schema.json"],
   ["content/funds.json", "funds.schema.json"],
+  ["content/announcements.json", "announcements.schema.json"],
   ["content/sources.json", "sources.schema.json"],
   ...readdirSync(path.join(root, "content/pages")).map((f) => [`content/pages/${f}`, "page.schema.json"]),
   ...readdirSync(path.join(root, "content/burials")).map((f) => [`content/burials/${f}`, "burials.schema.json"]),

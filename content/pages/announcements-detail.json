@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "announcements/detail",
+  "title": {
+    "en": "Announcement",
+    "ru": "Объявление",
+    "el": "Ανακοίνωση"
+  },
+  "description": {
+    "en": "Details of a cemetery announcement.",
+    "ru": "Подробности объявления кладбища.",
+    "el": "Λεπτομέρειες ανακοίνωσης του κοιμητηρίου."
+  },
+  "sections": [
+    {
+      "type": "announcementDetail",
+      "enabled": true
+    }
+  ]
+}

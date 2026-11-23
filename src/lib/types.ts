@@ -156,6 +156,23 @@ export interface YearlyService {
   note?: Localized;
 }
 
+export type AnnouncementKind = "memorial-day" | "cleanup" | "hours" | "closure" | "notice";
+
+export interface Announcement {
+  id: string;
+  date?: string;
+  rule?: string;
+  offsetDays?: number;
+  time?: string;
+  endTime?: string;
+  kind: AnnouncementKind;
+  featured?: boolean;
+  title: Localized;
+  summary: Localized;
+  body: Localized;
+  location?: Localized;
+}
+
 export interface Services {
   weekly: WeeklyService[];
   memorialDays: YearlyService[];

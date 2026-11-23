@@ -10,7 +10,7 @@ export function DisplayPhrase({ className, size = "base" }: { className?: string
   const phraseLang = site.displayFont === "greek" ? "grc" : "cu";
   return (
     <p className={cn("flex flex-col items-center gap-0.5", className)}>
-      <span lang={phraseLang} className={cn("font-display leading-none", size === "lg" ? "text-4xl sm:text-5xl" : "text-3xl")}>
+      <span lang={phraseLang} className={cn("font-display leading-normal", size === "lg" ? "text-4xl sm:text-5xl" : "text-3xl")}>
         {site.displayPhrase}
       </span>
       <span className="text-sm tracking-wide opacity-80">{L(site.displayPhraseMeaning)}</span>

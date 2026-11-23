@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "slug": "announcements",
+  "title": {
+    "en": "Announcements",
+    "ru": "Объявления",
+    "el": "Ανακοινώσεις"
+  },
+  "description": {
+    "en": "Memorial days, cleanup days, visiting hours and office notices.",
+    "ru": "Дни поминовения, уборка, часы посещения и сообщения конторы.",
+    "el": "Ημέρες μνήμης, καθαρισμοί, ώρες επίσκεψης και ανακοινώσεις γραφείου."
+  },
+  "sections": [
+    {
+      "type": "pageHeader",
+      "enabled": true,
+      "intro": {
+        "en": "Dated notices from the cemetery office.",
+        "ru": "Датированные сообщения кладбищенской конторы.",
+        "el": "Ημερολογιακές ανακοινώσεις από το γραφείο του κοιμητηρίου."
+      }
+    },
+    {
+      "type": "announcementsList",
+      "enabled": true,
+      "id": "list",
+      "count": 24
+    }
+  ]
+}

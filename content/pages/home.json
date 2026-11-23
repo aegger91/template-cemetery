@@ -16,14 +16,14 @@
       "type": "hero",
       "enabled": true,
       "image": {
-        "src": "/images/pd/belozersk-chapel-field.webp",
-        "srcSmall": "/images/pd/belozersk-chapel-field-sm.webp",
+        "src": "/images/pd/orthodox-cemetery-radom.webp",
+        "srcSmall": "/images/pd/orthodox-cemetery-radom-sm.webp",
         "alt": {
-          "en": "A small wooden chapel with a dome stands alone in a mown meadow under a pale sky.",
-          "ru": "Небольшая деревянная часовня с куполом одиноко стоит на скошенном лугу под бледным небом.",
-          "el": "Ένα μικρό ξύλινο παρεκκλήσι με τρούλο στέκει μόνο του σε ένα κουρεμένο λιβάδι κάτω από χλωμό ουρανό."
+          "en": "Wooden Orthodox crosses stand among trees in a quiet cemetery.",
+          "ru": "Деревянные православные кресты среди деревьев на тихом кладбище.",
+          "el": "Ξύλινοι ορθόδοξοι σταυροί ανάμεσα σε δέντρα σε ένα ήσυχο κοιμητήριο."
         },
-        "sourceId": "belozersk-chapel-field"
+        "sourceId": "orthodox-cemetery-radom"
       },
       "intro": {
         "en": "Families have come to this hillside to pray for their departed for more than a century. You are welcome here.",
@@ -53,7 +53,7 @@
           "icon": "candle",
           "page": "services/commemoration",
           "label": {
-            "en": "Commemoration notes",
+            "en": "Prayer requests",
             "ru": "Записки об упокоении",
             "el": "Ονόματα για μνημόνευση"
           },
@@ -65,16 +65,16 @@
         },
         {
           "icon": "calendar",
-          "page": "services",
+          "page": "announcements",
           "label": {
-            "en": "Service schedule",
-            "ru": "Расписание служб",
-            "el": "Πρόγραμμα ακολουθιών"
+            "en": "Announcements",
+            "ru": "Объявления",
+            "el": "Ανακοινώσεις"
           },
           "text": {
-            "en": "Weekly Panikhidas and the yearly Memorial Saturdays.",
-            "ru": "Еженедельные панихиды и родительские субботы.",
-            "el": "Εβδομαδιαία μνημόσυνα και τα Ψυχοσάββατα του έτους."
+            "en": "Memorial days, cleanup days and visiting notices.",
+            "ru": "Дни поминовения, уборка и сведения о посещении.",
+            "el": "Ημέρες μνήμης, καθαρισμοί και ενημερώσεις επισκέψεων."
           }
         },
         {
@@ -94,18 +94,18 @@
       ]
     },
     {
-      "type": "upcomingServices",
+      "type": "upcomingAnnouncements",
       "enabled": true,
       "id": "upcoming",
       "heading": {
-        "en": "Coming memorial days",
-        "ru": "Ближайшие дни поминовения",
-        "el": "Προσεχείς ημέρες μνήμης"
+        "en": "Coming announcements",
+        "ru": "Ближайшие объявления",
+        "el": "Επερχόμενες ανακοινώσεις"
       },
       "intro": {
-        "en": "Services at the chapel and at the graves in the months ahead.",
-        "ru": "Ближайшие богослужения в часовне и у могил.",
-        "el": "Οι επόμενες ακολουθίες στο παρεκκλήσι και στους τάφους."
+        "en": "Memorial days, cleanup days and notices from the office.",
+        "ru": "Дни поминовения, уборка и сообщения конторы.",
+        "el": "Ημέρες μνήμης, καθαρισμοί και ανακοινώσεις του γραφείου."
       },
       "count": 4
     },
